@@ -1,0 +1,5507 @@
+{
+  "users": [
+    {
+      "_id": "c981f2169a699c89d46c9d63",
+      "pontos": 0,
+      "nome": "Teste Local JSON",
+      "email": "teste-json-20260906@exemplo.com",
+      "senha": "$2b$10$k1KpzMEcKmB0yxRjHVHkZ.MH6F2wGoTFYE2kT1PtLo7tB/3hnj9Aa",
+      "role": "estudante"
+    },
+    {
+      "_id": "527557f04cdce1a6c744a532",
+      "pontos": 428,
+      "nome": "Pedro de Farias Xavier Toledo",
+      "email": "pedro.28fxt@gmail.com",
+      "senha": "$2b$10$EjvovDkLMfyQaltGXolJz.bE6AoVpyufWejPaVfd3kdgLqqPtm3LS",
+      "role": "estudante",
+      "xp": 428,
+      "acertos": 53,
+      "erros": 51,
+      "ultimosResultados": [
+        {
+          "quizId": "0d38ef4e489f157271494e46",
+          "titulo": "ggdg",
+          "acertos": 0,
+          "erros": 1,
+          "xp": -2,
+          "data": "2026-09-07T15:29:02.060Z"
+        },
+        {
+          "quizId": "23f2688c0f94d2a497045b4d",
+          "titulo": "Quiz de Teste Profissional",
+          "acertos": 0,
+          "erros": 1,
+          "xp": -2,
+          "data": "2026-09-07T16:59:38.255Z"
+        },
+        {
+          "quizId": "3b530ddf4c7d6c8122352e72",
+          "titulo": "ggdg",
+          "acertos": 0,
+          "erros": 1,
+          "xp": -2,
+          "data": "2026-09-07T17:02:05.026Z"
+        },
+        {
+          "quizId": "50c2615ac22a357083062265",
+          "titulo": "História do Brasil",
+          "acertos": 5,
+          "erros": 5,
+          "xp": 40,
+          "data": "2026-09-07T17:48:38.844Z"
+        },
+        {
+          "quizId": "d1fa00c1d337fbfbf4f5c6b5",
+          "titulo": "qual é djkd",
+          "acertos": 0,
+          "erros": 1,
+          "xp": -2,
+          "data": "2026-09-07T21:52:24.415Z"
+        },
+        {
+          "quizId": "d1fa00c1d337fbfbf4f5c6b5",
+          "titulo": "qual é djkd",
+          "acertos": 0,
+          "erros": 1,
+          "xp": -2,
+          "data": "2026-09-07T21:53:27.968Z"
+        },
+        {
+          "quizId": "d1fa00c1d337fbfbf4f5c6b5",
+          "titulo": "qual é djkd",
+          "acertos": 0,
+          "erros": 1,
+          "xp": -2,
+          "data": "2026-09-07T21:54:18.194Z"
+        },
+        {
+          "quizId": "51cfff9e62d2aa31b9cbd6dc",
+          "titulo": "qual é djkd",
+          "acertos": 0,
+          "erros": 2,
+          "xp": -4,
+          "data": "2026-09-07T21:55:35.603Z"
+        },
+        {
+          "quizId": "51cfff9e62d2aa31b9cbd6dc",
+          "titulo": "qual é djkd",
+          "acertos": 0,
+          "erros": 2,
+          "xp": -4,
+          "data": "2026-09-07T21:57:35.310Z"
+        },
+        {
+          "quizId": "51cfff9e62d2aa31b9cbd6dc",
+          "titulo": "qual é djkd",
+          "acertos": 0,
+          "erros": 2,
+          "xp": -4,
+          "data": "2026-09-07T21:57:49.278Z"
+        },
+        {
+          "quizId": "51cfff9e62d2aa31b9cbd6dc",
+          "titulo": "qual é djkd",
+          "acertos": 0,
+          "erros": 2,
+          "xp": -4,
+          "data": "2026-09-07T21:58:42.337Z"
+        },
+        {
+          "quizId": "51cfff9e62d2aa31b9cbd6dc",
+          "titulo": "qual é djkd",
+          "acertos": 0,
+          "erros": 2,
+          "xp": -4,
+          "data": "2026-09-07T22:03:11.749Z"
+        },
+        {
+          "quizId": "51cfff9e62d2aa31b9cbd6dc",
+          "titulo": "qual é djkd",
+          "acertos": 0,
+          "erros": 2,
+          "xp": -4,
+          "data": "2026-09-07T22:05:21.433Z"
+        },
+        {
+          "quizId": "51cfff9e62d2aa31b9cbd6dc",
+          "titulo": "qual é djkd",
+          "acertos": 0,
+          "erros": 2,
+          "xp": -4,
+          "data": "2026-09-07T22:07:46.528Z"
+        },
+        {
+          "quizId": "1530f084df7c52d36836f24d",
+          "titulo": "qual é djkd",
+          "acertos": 0,
+          "erros": 2,
+          "xp": -4,
+          "data": "2026-09-07T22:17:45.253Z"
+        },
+        {
+          "quizId": "6239051044a4b0ccb581ebdd",
+          "titulo": "Desafio Médio de Biologia I",
+          "acertos": 7,
+          "erros": 3,
+          "xp": 64,
+          "data": "2026-09-07T22:46:26.560Z"
+        },
+        {
+          "quizId": "f7d6fe0d8b8680cb69791123",
+          "titulo": "Desafio Médio de Biologia II",
+          "acertos": 10,
+          "erros": 0,
+          "xp": 100,
+          "data": "2026-09-07T22:48:24.021Z"
+        },
+        {
+          "quizId": "abeea4774335e1b189005951",
+          "titulo": "Desafio Médio de Português II",
+          "acertos": 7,
+          "erros": 3,
+          "xp": 64,
+          "data": "2026-09-07T22:57:15.094Z"
+        },
+        {
+          "quizId": "064cab201e04a9b35985a425",
+          "titulo": "Desafio Médio de Conhecimentos Gerais II",
+          "acertos": 6,
+          "erros": 4,
+          "xp": 52,
+          "data": "2026-09-07T22:59:58.909Z"
+        },
+        {
+          "quizId": "fc3bf889be36c034448a2744",
+          "titulo": "Desafio Médio de Filosofia II",
+          "acertos": 8,
+          "erros": 2,
+          "xp": 76,
+          "data": "2026-09-07T23:03:44.294Z"
+        }
+      ],
+      "avatar": "oceano",
+      "atividades": [
+        {
+          "_id": "6f1f09ffa9cb565674554676",
+          "quizId": "50c2615ac22a357083062265",
+          "titulo": "História do Brasil",
+          "remetente": "Pedro de Farias Xavier Toledo",
+          "remetenteEmail": "dev@admin.com",
+          "status": "concluida",
+          "enviadaEm": "2026-09-07T17:47:15.259Z",
+          "concluidaEm": "2026-09-07T17:48:38.844Z",
+          "resultado": {
+            "acertos": 5,
+            "erros": 5,
+            "nota": 5,
+            "tempoTotalMs": 42917,
+            "respostas": [
+              {
+                "pergunta": 0,
+                "indice": 2,
+                "acertou": true,
+                "tempoEsgotado": false,
+                "tempoMs": 9837
+              },
+              {
+                "pergunta": 1,
+                "indice": 0,
+                "acertou": true,
+                "tempoEsgotado": false,
+                "tempoMs": 8774
+              },
+              {
+                "pergunta": 2,
+                "indice": 1,
+                "acertou": true,
+                "tempoEsgotado": false,
+                "tempoMs": 19849
+              },
+              {
+                "pergunta": 3,
+                "indice": 3,
+                "acertou": false,
+                "tempoEsgotado": false,
+                "tempoMs": 896
+              },
+              {
+                "pergunta": 4,
+                "indice": 1,
+                "acertou": false,
+                "tempoEsgotado": false,
+                "tempoMs": 592
+              },
+              {
+                "pergunta": 5,
+                "indice": 2,
+                "acertou": false,
+                "tempoEsgotado": false,
+                "tempoMs": 1257
+              },
+              {
+                "pergunta": 6,
+                "indice": 3,
+                "acertou": false,
+                "tempoEsgotado": false,
+                "tempoMs": 296
+              },
+              {
+                "pergunta": 7,
+                "indice": 1,
+                "acertou": true,
+                "tempoEsgotado": false,
+                "tempoMs": 210
+              },
+              {
+                "pergunta": 8,
+                "indice": 0,
+                "acertou": true,
+                "tempoEsgotado": false,
+                "tempoMs": 945
+              },
+              {
+                "pergunta": 9,
+                "indice": 1,
+                "acertou": false,
+                "tempoEsgotado": false,
+                "tempoMs": 261
+              }
+            ],
+            "concluidaEm": "2026-09-07T17:48:38.844Z"
+          }
+        },
+        {
+          "_id": "0a3569f70371699c1e6cd244",
+          "quizId": "3307bb46958a011d15c2cc72",
+          "titulo": "Desafio Médio de Matemática I",
+          "remetenteId": "d5cf3b4778a2fe2d8998b02e",
+          "remetente": "Seu professor",
+          "remetenteEmail": "",
+          "status": "pendente",
+          "enviadaEm": "2026-09-09T23:04:40.176Z",
+          "concluidaEm": null
+        }
+      ]
+    },
+    {
+      "_id": "cd7be09badb17297fb7b4f92",
+      "nome": "Feature Test",
+      "email": "feature-test-1615747895@example.com",
+      "senha": "$2b$10$qRt6E8cF3oPzQ6MpacmnAuNqt7hO/JHn5ZMrlu//gmWdgGGfMAuh2",
+      "role": "estudante",
+      "pontos": 64,
+      "xp": 64,
+      "acertos": 7,
+      "erros": 3,
+      "avatar": "aurora",
+      "ultimosResultados": [
+        {
+          "quizId": "21b50b204a2bad2ced392c97",
+          "titulo": "Matemática essencial",
+          "acertos": 7,
+          "erros": 3,
+          "xp": 64,
+          "data": "2026-09-07T03:28:50.640Z"
+        }
+      ]
+    },
+    {
+      "_id": "cbfb9b81552a9f010c8126ea",
+      "nome": "Conta Local",
+      "email": "conta-local-20260907@exemplo.com",
+      "senha": "$2b$10$WeT1TZcyWL1ZPCmgetKSjuh./URX9GelNoW1nw2qJZie36A2J7r8m",
+      "role": "estudante",
+      "pontos": 0,
+      "xp": 0,
+      "acertos": 0,
+      "erros": 0,
+      "avatar": "aurora"
+    },
+    {
+      "_id": "96dfd81d9de1da36353535c6",
+      "nome": "Pedro de Farias Xavier Toledo",
+      "email": "dev@admin.com",
+      "senha": "$2b$10$PqjQFe4c2zRAoH6s6dqLo.CINJXhbx74xWVcglk/3P9QJ5M7UHpJG",
+      "role": "professor",
+      "roles": [
+        "professor",
+        "estudante"
+      ],
+      "pontos": 28,
+      "xp": 28,
+      "acertos": 4,
+      "erros": 6,
+      "avatar": "rubi",
+      "ultimosResultados": [
+        {
+          "quizId": "6570c2f4a76f267e83d6b796",
+          "titulo": "Geografia do mundo",
+          "acertos": 4,
+          "erros": 6,
+          "xp": 28,
+          "data": "2026-09-07T17:56:17.216Z"
+        }
+      ]
+    },
+    {
+      "_id": "c0f4fc356a485c3c84795af0",
+      "nome": "Pedro de Farias Xavier Toledo",
+      "email": "pedro@gmail.com",
+      "senha": "$2b$10$LkhrZZKwP/9dE2f7dsOII.Y.9T.Zn1YQ2avVrIbegv.RxbmTqcLTa",
+      "role": "desenvolvedor",
+      "roles": [
+        "desenvolvedor",
+        "professor",
+        "estudante"
+      ],
+      "pontos": 0,
+      "xp": 0,
+      "acertos": 0,
+      "erros": 0,
+      "avatar": "aurora"
+    },
+    {
+      "_id": "a3c54f2c8e95e394326e9bda",
+      "nome": "Pedro de Farias Xavier Toledo",
+      "email": "lupgua@gmail.com",
+      "senha": "$2b$10$BjdGdn4fBsdC9AWtP68yRuqntjJ2y5JP84nSuRKSVx1lHgntoFDq6",
+      "role": "desenvolvedor",
+      "roles": [
+        "desenvolvedor",
+        "professor",
+        "estudante"
+      ],
+      "pontos": 0,
+      "xp": 0,
+      "acertos": 0,
+      "erros": 0,
+      "avatar": "aurora"
+    },
+    {
+      "_id": "8b38841ce2cd91cb86a5d580",
+      "nome": "pedro de farias xavier toledo",
+      "email": "cristina.bookmann@gmail.com",
+      "senha": "$2b$10$5EuDt1u93mK5OmK3lC4Jwuvj.1YpbDxq1I1Cb9/nAHOOQuNvk/iPa",
+      "role": "professor",
+      "roles": [
+        "professor",
+        "estudante"
+      ],
+      "pontos": 0,
+      "xp": 0,
+      "acertos": 0,
+      "erros": 0,
+      "avatar": "aurora"
+    }
+  ],
+  "quizzes": [
+    {
+      "_id": "3307bb46958a011d15c2cc72",
+      "titulo": "Desafio Médio de Matemática I",
+      "categoria": "Matemática",
+      "dificuldade": "media-dificil",
+      "codigo": "8TK18L",
+      "perguntas": [
+        {
+          "pergunta": "Se f(x)=2x²-3x+1, qual é f(2)?",
+          "opcoes": [
+            "1",
+            "3",
+            "5",
+            "7"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A soma dos ângulos internos de um hexágono é:",
+          "opcoes": [
+            "540°",
+            "720°",
+            "900°",
+            "1080°"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Qual é a razão entre 18 e 24 simplificada?",
+          "opcoes": [
+            "2/3",
+            "3/4",
+            "4/5",
+            "5/6"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Um produto de R$ 200 recebe desconto de 15%. Qual o preço final?",
+          "opcoes": [
+            "R$ 160",
+            "R$ 170",
+            "R$ 175",
+            "R$ 185"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Qual é a solução positiva de x²-9=0?",
+          "opcoes": [
+            "1",
+            "3",
+            "6",
+            "9"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A média de 8, 12, 15 e 5 é:",
+          "opcoes": [
+            "8",
+            "9",
+            "10",
+            "11"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Se 3/5 de um número é 24, o número é:",
+          "opcoes": [
+            "30",
+            "36",
+            "40",
+            "45"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Qual é a área de um círculo de raio 3, usando π=3,14?",
+          "opcoes": [
+            "18,84",
+            "28,26",
+            "37,68",
+            "56,52"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Na sequência 4, 9, 14, 19, o próximo termo é:",
+          "opcoes": [
+            "22",
+            "23",
+            "24",
+            "25"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Quanto vale 2³·2⁴?",
+          "opcoes": [
+            "32",
+            "64",
+            "128",
+            "256"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "2408c3869bfc18ed58b66c1a",
+      "titulo": "Desafio Médio de Matemática II",
+      "categoria": "Matemática",
+      "dificuldade": "media-dificil",
+      "codigo": "M4MA5D",
+      "perguntas": [
+        {
+          "pergunta": "Quanto vale 2³·2⁴?",
+          "opcoes": [
+            "64",
+            "128",
+            "256",
+            "32"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Na sequência 4, 9, 14, 19, o próximo termo é:",
+          "opcoes": [
+            "23",
+            "24",
+            "25",
+            "22"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Qual é a área de um círculo de raio 3, usando π=3,14?",
+          "opcoes": [
+            "28,26",
+            "37,68",
+            "56,52",
+            "18,84"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Se 3/5 de um número é 24, o número é:",
+          "opcoes": [
+            "36",
+            "40",
+            "45",
+            "30"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A média de 8, 12, 15 e 5 é:",
+          "opcoes": [
+            "9",
+            "10",
+            "11",
+            "8"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Qual é a solução positiva de x²-9=0?",
+          "opcoes": [
+            "3",
+            "6",
+            "9",
+            "1"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Um produto de R$ 200 recebe desconto de 15%. Qual o preço final?",
+          "opcoes": [
+            "R$ 170",
+            "R$ 175",
+            "R$ 185",
+            "R$ 160"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Qual é a razão entre 18 e 24 simplificada?",
+          "opcoes": [
+            "3/4",
+            "4/5",
+            "5/6",
+            "2/3"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A soma dos ângulos internos de um hexágono é:",
+          "opcoes": [
+            "720°",
+            "900°",
+            "1080°",
+            "540°"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Se f(x)=2x²-3x+1, qual é f(2)?",
+          "opcoes": [
+            "3",
+            "5",
+            "7",
+            "1"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "d1a2463b88151a21b3b346f8",
+      "titulo": "Desafio Médio de Português I",
+      "categoria": "Português",
+      "dificuldade": "media-dificil",
+      "codigo": "WRZWHS",
+      "perguntas": [
+        {
+          "pergunta": "Em “Embora estudasse, não foi aprovado”, “embora” introduz uma oração:",
+          "opcoes": [
+            "causal",
+            "concessiva",
+            "condicional",
+            "consecutiva"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A palavra “inconstitucional” é formada principalmente por:",
+          "opcoes": [
+            "derivação regressiva",
+            "composição",
+            "derivação prefixal e sufixal",
+            "abreviação"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em “Vendem-se casas”, o “se” é:",
+          "opcoes": [
+            "pronome reflexivo",
+            "índice de indeterminação",
+            "partícula apassivadora",
+            "conjunção"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A concordância correta é:",
+          "opcoes": [
+            "Fazem dois anos",
+            "Houveram problemas",
+            "Faz dois anos",
+            "Existe muitas dúvidas"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em “O livro que comprei sumiu”, “que” exerce função de:",
+          "opcoes": [
+            "sujeito",
+            "objeto direto",
+            "adjunto adverbial",
+            "predicativo"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A regência correta é:",
+          "opcoes": [
+            "Assisti o filme",
+            "Prefiro mais café",
+            "Obedeço às regras",
+            "Cheguei no local"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "“A cidade dormia” apresenta:",
+          "opcoes": [
+            "metonímia",
+            "personificação",
+            "antítese",
+            "eufemismo"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A oração “quando terminou a aula” indica circunstância de:",
+          "opcoes": [
+            "tempo",
+            "causa",
+            "finalidade",
+            "concessão"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em “É necessário que todos participem”, a oração destacada é:",
+          "opcoes": [
+            "substantiva subjetiva",
+            "adjetiva restritiva",
+            "adverbial causal",
+            "substantiva objetiva"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A colocação pronominal em “Não me conte isso” é:",
+          "opcoes": [
+            "ênclise",
+            "mesóclise",
+            "próclise",
+            "apóclise"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "80672a9594a190fff3ab7d19",
+      "titulo": "Desafio Médio de Português II",
+      "categoria": "Português",
+      "dificuldade": "media-dificil",
+      "codigo": "NMXJSX",
+      "perguntas": [
+        {
+          "pergunta": "A colocação pronominal em “Não me conte isso” é:",
+          "opcoes": [
+            "mesóclise",
+            "próclise",
+            "apóclise",
+            "ênclise"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em “É necessário que todos participem”, a oração destacada é:",
+          "opcoes": [
+            "adjetiva restritiva",
+            "adverbial causal",
+            "substantiva objetiva",
+            "substantiva subjetiva"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A oração “quando terminou a aula” indica circunstância de:",
+          "opcoes": [
+            "causa",
+            "finalidade",
+            "concessão",
+            "tempo"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "“A cidade dormia” apresenta:",
+          "opcoes": [
+            "personificação",
+            "antítese",
+            "eufemismo",
+            "metonímia"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A regência correta é:",
+          "opcoes": [
+            "Prefiro mais café",
+            "Obedeço às regras",
+            "Cheguei no local",
+            "Assisti o filme"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em “O livro que comprei sumiu”, “que” exerce função de:",
+          "opcoes": [
+            "objeto direto",
+            "adjunto adverbial",
+            "predicativo",
+            "sujeito"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A concordância correta é:",
+          "opcoes": [
+            "Houveram problemas",
+            "Faz dois anos",
+            "Existe muitas dúvidas",
+            "Fazem dois anos"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em “Vendem-se casas”, o “se” é:",
+          "opcoes": [
+            "índice de indeterminação",
+            "partícula apassivadora",
+            "conjunção",
+            "pronome reflexivo"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A palavra “inconstitucional” é formada principalmente por:",
+          "opcoes": [
+            "composição",
+            "derivação prefixal e sufixal",
+            "abreviação",
+            "derivação regressiva"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em “Embora estudasse, não foi aprovado”, “embora” introduz uma oração:",
+          "opcoes": [
+            "concessiva",
+            "condicional",
+            "consecutiva",
+            "causal"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "5b77873e193d02bda619c5b6",
+      "titulo": "Desafio Médio de História I",
+      "categoria": "História",
+      "dificuldade": "media-dificil",
+      "codigo": "DULI8P",
+      "perguntas": [
+        {
+          "pergunta": "A Revolução Francesa começou em 1789 sob forte influência do:",
+          "opcoes": [
+            "absolutismo",
+            "Iluminismo",
+            "mercantilismo",
+            "feudalismo"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A Era Vargas iniciou-se com a:",
+          "opcoes": [
+            "Revolução de 1930",
+            "Constituição de 1824",
+            "Proclamação da República",
+            "Guerra de Canudos"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O AI-5, decretado em 1968, marcou:",
+          "opcoes": [
+            "abertura política",
+            "aumento da repressão da ditadura",
+            "fim do Estado Novo",
+            "início da República"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A política do café com leite alternava o poder entre São Paulo e:",
+          "opcoes": [
+            "Bahia",
+            "Minas Gerais",
+            "Pernambuco",
+            "Rio Grande do Sul"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A Conferência de Berlim relaciona-se principalmente à:",
+          "opcoes": [
+            "descolonização da Ásia",
+            "partilha da África",
+            "criação da ONU",
+            "Revolução Russa"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A Guerra Fria foi marcada pela disputa entre:",
+          "opcoes": [
+            "EUA e URSS",
+            "França e Inglaterra",
+            "China e Japão",
+            "Brasil e Argentina"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A Constituição brasileira de 1988 ficou conhecida como:",
+          "opcoes": [
+            "Constituição Cidadã",
+            "Carta Imperial",
+            "Constituição Militar",
+            "Carta do Estado Novo"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O mercantilismo valorizava, entre outros fatores:",
+          "opcoes": [
+            "metalismo e balança comercial favorável",
+            "fim dos monopólios",
+            "economia de subsistência",
+            "igualdade agrária"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A Inconfidência Mineira foi influenciada pela independência dos:",
+          "opcoes": [
+            "Estados Unidos",
+            "países africanos",
+            "reinos germânicos",
+            "impérios asiáticos"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O Tratado de Tordesilhas dividiu áreas ultramarinas entre:",
+          "opcoes": [
+            "Portugal e Espanha",
+            "França e Inglaterra",
+            "Holanda e França",
+            "Espanha e Itália"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "4fdd2899296e3c112c167d16",
+      "titulo": "Desafio Médio de História II",
+      "categoria": "História",
+      "dificuldade": "media-dificil",
+      "codigo": "E7TIA0",
+      "perguntas": [
+        {
+          "pergunta": "O Tratado de Tordesilhas dividiu áreas ultramarinas entre:",
+          "opcoes": [
+            "França e Inglaterra",
+            "Holanda e França",
+            "Espanha e Itália",
+            "Portugal e Espanha"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A Inconfidência Mineira foi influenciada pela independência dos:",
+          "opcoes": [
+            "países africanos",
+            "reinos germânicos",
+            "impérios asiáticos",
+            "Estados Unidos"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O mercantilismo valorizava, entre outros fatores:",
+          "opcoes": [
+            "fim dos monopólios",
+            "economia de subsistência",
+            "igualdade agrária",
+            "metalismo e balança comercial favorável"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A Constituição brasileira de 1988 ficou conhecida como:",
+          "opcoes": [
+            "Carta Imperial",
+            "Constituição Militar",
+            "Carta do Estado Novo",
+            "Constituição Cidadã"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A Guerra Fria foi marcada pela disputa entre:",
+          "opcoes": [
+            "França e Inglaterra",
+            "China e Japão",
+            "Brasil e Argentina",
+            "EUA e URSS"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A Conferência de Berlim relaciona-se principalmente à:",
+          "opcoes": [
+            "partilha da África",
+            "criação da ONU",
+            "Revolução Russa",
+            "descolonização da Ásia"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A política do café com leite alternava o poder entre São Paulo e:",
+          "opcoes": [
+            "Minas Gerais",
+            "Pernambuco",
+            "Rio Grande do Sul",
+            "Bahia"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O AI-5, decretado em 1968, marcou:",
+          "opcoes": [
+            "aumento da repressão da ditadura",
+            "fim do Estado Novo",
+            "início da República",
+            "abertura política"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A Era Vargas iniciou-se com a:",
+          "opcoes": [
+            "Constituição de 1824",
+            "Proclamação da República",
+            "Guerra de Canudos",
+            "Revolução de 1930"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A Revolução Francesa começou em 1789 sob forte influência do:",
+          "opcoes": [
+            "Iluminismo",
+            "mercantilismo",
+            "feudalismo",
+            "absolutismo"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "538cc8b6b85e13f3bcd82999",
+      "titulo": "Desafio Médio de Geografia I",
+      "categoria": "Geografia",
+      "dificuldade": "media-dificil",
+      "codigo": "APM2IQ",
+      "perguntas": [
+        {
+          "pergunta": "O fenômeno El Niño corresponde ao aquecimento anormal das águas do:",
+          "opcoes": [
+            "Atlântico Norte",
+            "Pacífico Equatorial",
+            "Índico Sul",
+            "Mediterrâneo"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A projeção de Mercator é criticada por distorcer principalmente:",
+          "opcoes": [
+            "áreas em altas latitudes",
+            "fusos horários",
+            "altitudes locais",
+            "fronteiras políticas"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A maior bacia hidrográfica brasileira é a:",
+          "opcoes": [
+            "do Paraná",
+            "Amazônica",
+            "do São Francisco",
+            "do Tocantins-Araguaia"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O processo de urbanização sem planejamento pode intensificar:",
+          "opcoes": [
+            "ilhas de calor e enchentes",
+            "terremotos",
+            "marés",
+            "auroras"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A latitude mede a distância em relação:",
+          "opcoes": [
+            "ao Meridiano de Greenwich",
+            "à Linha do Equador",
+            "aos trópicos apenas",
+            "aos polos apenas"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A transição demográfica tende a ocorrer com:",
+          "opcoes": [
+            "queda da mortalidade e depois da natalidade",
+            "aumento permanente da natalidade",
+            "fim da urbanização",
+            "crescimento da mortalidade infantil"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A desertificação está associada à degradação de terras em:",
+          "opcoes": [
+            "áreas áridas e semiáridas",
+            "zonas polares apenas",
+            "florestas úmidas intactas",
+            "oceanos profundos"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A globalização intensifica principalmente:",
+          "opcoes": [
+            "fluxos de mercadorias, capitais e informações",
+            "isolamento econômico",
+            "fim das redes digitais",
+            "redução dos transportes"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O aquífero é uma formação que armazena:",
+          "opcoes": [
+            "água subterrânea",
+            "lava",
+            "petróleo obrigatoriamente",
+            "gelo atmosférico"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A latitude influencia diretamente a variação de:",
+          "opcoes": [
+            "incidência solar",
+            "composição do núcleo",
+            "salinidade de todo rio",
+            "rotação da Lua"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "74d1d2a7fbaa2f98d72563b4",
+      "titulo": "Desafio Médio de Geografia II",
+      "categoria": "Geografia",
+      "dificuldade": "media-dificil",
+      "codigo": "CO10OG",
+      "perguntas": [
+        {
+          "pergunta": "A latitude influencia diretamente a variação de:",
+          "opcoes": [
+            "composição do núcleo",
+            "salinidade de todo rio",
+            "rotação da Lua",
+            "incidência solar"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O aquífero é uma formação que armazena:",
+          "opcoes": [
+            "lava",
+            "petróleo obrigatoriamente",
+            "gelo atmosférico",
+            "água subterrânea"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A globalização intensifica principalmente:",
+          "opcoes": [
+            "isolamento econômico",
+            "fim das redes digitais",
+            "redução dos transportes",
+            "fluxos de mercadorias, capitais e informações"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A desertificação está associada à degradação de terras em:",
+          "opcoes": [
+            "zonas polares apenas",
+            "florestas úmidas intactas",
+            "oceanos profundos",
+            "áreas áridas e semiáridas"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A transição demográfica tende a ocorrer com:",
+          "opcoes": [
+            "aumento permanente da natalidade",
+            "fim da urbanização",
+            "crescimento da mortalidade infantil",
+            "queda da mortalidade e depois da natalidade"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A latitude mede a distância em relação:",
+          "opcoes": [
+            "à Linha do Equador",
+            "aos trópicos apenas",
+            "aos polos apenas",
+            "ao Meridiano de Greenwich"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O processo de urbanização sem planejamento pode intensificar:",
+          "opcoes": [
+            "terremotos",
+            "marés",
+            "auroras",
+            "ilhas de calor e enchentes"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A maior bacia hidrográfica brasileira é a:",
+          "opcoes": [
+            "Amazônica",
+            "do São Francisco",
+            "do Tocantins-Araguaia",
+            "do Paraná"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A projeção de Mercator é criticada por distorcer principalmente:",
+          "opcoes": [
+            "fusos horários",
+            "altitudes locais",
+            "fronteiras políticas",
+            "áreas em altas latitudes"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O fenômeno El Niño corresponde ao aquecimento anormal das águas do:",
+          "opcoes": [
+            "Pacífico Equatorial",
+            "Índico Sul",
+            "Mediterrâneo",
+            "Atlântico Norte"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "79c1b781fd7cc67037b65c95",
+      "titulo": "Desafio Médio de Ciências I",
+      "categoria": "Ciências",
+      "dificuldade": "media-dificil",
+      "codigo": "2JO77B",
+      "perguntas": [
+        {
+          "pergunta": "A seleção natural favorece características que:",
+          "opcoes": [
+            "aumentam a sobrevivência e reprodução",
+            "surgem sempre por necessidade",
+            "impedem mutações",
+            "são adquiridas por treino"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A segunda lei de Newton é expressa por:",
+          "opcoes": [
+            "E=mc²",
+            "F=m·a",
+            "V=R·i",
+            "P=U·i"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A fotossíntese utiliza dióxido de carbono e água para produzir:",
+          "opcoes": [
+            "glicose e oxigênio",
+            "proteínas e nitrogênio",
+            "gordura e metano",
+            "álcool e ozônio"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O pH abaixo de 7 indica uma solução:",
+          "opcoes": [
+            "básica",
+            "neutra",
+            "ácida",
+            "salina"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A corrente elétrica é medida em:",
+          "opcoes": [
+            "volts",
+            "amperes",
+            "ohms",
+            "watts"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O DNA apresenta como função principal:",
+          "opcoes": [
+            "armazenar informação genética",
+            "produzir energia diretamente",
+            "digerir lipídios",
+            "transportar oxigênio"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A pressão atmosférica tende a diminuir quando:",
+          "opcoes": [
+            "a altitude aumenta",
+            "a altitude diminui",
+            "a umidade zera",
+            "a latitude aumenta sempre"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A transformação de líquido em vapor é:",
+          "opcoes": [
+            "condensação",
+            "vaporização",
+            "fusão",
+            "sublimação"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em uma cadeia alimentar, os produtores são geralmente:",
+          "opcoes": [
+            "fungos",
+            "plantas e algas",
+            "carnívoros",
+            "decompositores"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A unidade de energia no SI é o:",
+          "opcoes": [
+            "newton",
+            "joule",
+            "pascal",
+            "watt"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "47433c7cf23f1e6afa198e5c",
+      "titulo": "Desafio Médio de Ciências II",
+      "categoria": "Ciências",
+      "dificuldade": "media-dificil",
+      "codigo": "86XMSW",
+      "perguntas": [
+        {
+          "pergunta": "A unidade de energia no SI é o:",
+          "opcoes": [
+            "joule",
+            "pascal",
+            "watt",
+            "newton"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em uma cadeia alimentar, os produtores são geralmente:",
+          "opcoes": [
+            "plantas e algas",
+            "carnívoros",
+            "decompositores",
+            "fungos"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A transformação de líquido em vapor é:",
+          "opcoes": [
+            "vaporização",
+            "fusão",
+            "sublimação",
+            "condensação"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A pressão atmosférica tende a diminuir quando:",
+          "opcoes": [
+            "a altitude diminui",
+            "a umidade zera",
+            "a latitude aumenta sempre",
+            "a altitude aumenta"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O DNA apresenta como função principal:",
+          "opcoes": [
+            "produzir energia diretamente",
+            "digerir lipídios",
+            "transportar oxigênio",
+            "armazenar informação genética"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A corrente elétrica é medida em:",
+          "opcoes": [
+            "amperes",
+            "ohms",
+            "watts",
+            "volts"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O pH abaixo de 7 indica uma solução:",
+          "opcoes": [
+            "neutra",
+            "ácida",
+            "salina",
+            "básica"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A fotossíntese utiliza dióxido de carbono e água para produzir:",
+          "opcoes": [
+            "proteínas e nitrogênio",
+            "gordura e metano",
+            "álcool e ozônio",
+            "glicose e oxigênio"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A segunda lei de Newton é expressa por:",
+          "opcoes": [
+            "F=m·a",
+            "V=R·i",
+            "P=U·i",
+            "E=mc²"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A seleção natural favorece características que:",
+          "opcoes": [
+            "surgem sempre por necessidade",
+            "impedem mutações",
+            "são adquiridas por treino",
+            "aumentam a sobrevivência e reprodução"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "53705572d3dc707494483df5",
+      "titulo": "Desafio Médio de Biologia I",
+      "categoria": "Biologia",
+      "dificuldade": "media-dificil",
+      "codigo": "FGG7MT",
+      "perguntas": [
+        {
+          "pergunta": "A meiose produz células com:",
+          "opcoes": [
+            "o dobro de cromossomos",
+            "metade dos cromossomos",
+            "nenhum cromossomo",
+            "cromossomos idênticos sempre"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "As enzimas atuam principalmente como:",
+          "opcoes": [
+            "catalisadores biológicos",
+            "fontes de DNA",
+            "hormônios sexuais",
+            "anticorpos estruturais"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A organela responsável pela respiração celular é a:",
+          "opcoes": [
+            "mitocôndria",
+            "ribossomo",
+            "lisossomo",
+            "cloroplasto"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O tecido que conduz impulsos nervosos é o:",
+          "opcoes": [
+            "epitelial",
+            "conjuntivo",
+            "nervoso",
+            "muscular"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A relação em que ambas as espécies se beneficiam é:",
+          "opcoes": [
+            "parasitismo",
+            "mutualismo",
+            "amensalismo",
+            "predação"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A insulina reduz a glicose no sangue ao favorecer sua:",
+          "opcoes": [
+            "excreção imediata",
+            "entrada nas células",
+            "conversão em oxigênio",
+            "produção no fígado"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Na respiração humana, as trocas gasosas ocorrem nos:",
+          "opcoes": [
+            "brônquios",
+            "alvéolos",
+            "bronquíolos apenas",
+            "diafragma"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O RNA mensageiro participa da:",
+          "opcoes": [
+            "síntese de proteínas",
+            "duplicação de ossos",
+            "digestão extracelular",
+            "produção de bile"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A imunidade adquirida por vacina é geralmente:",
+          "opcoes": [
+            "ativa e artificial",
+            "passiva e natural",
+            "inata",
+            "passiva e artificial"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A sucessão ecológica descreve:",
+          "opcoes": [
+            "mudanças graduais em uma comunidade",
+            "migração diária de animais",
+            "divisão celular",
+            "formação de rochas"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "aeaf7092b04e73d8e23d7db1",
+      "titulo": "Desafio Médio de Biologia II",
+      "categoria": "Biologia",
+      "dificuldade": "media-dificil",
+      "codigo": "T95NQH",
+      "perguntas": [
+        {
+          "pergunta": "A sucessão ecológica descreve:",
+          "opcoes": [
+            "migração diária de animais",
+            "divisão celular",
+            "formação de rochas",
+            "mudanças graduais em uma comunidade"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A imunidade adquirida por vacina é geralmente:",
+          "opcoes": [
+            "passiva e natural",
+            "inata",
+            "passiva e artificial",
+            "ativa e artificial"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O RNA mensageiro participa da:",
+          "opcoes": [
+            "duplicação de ossos",
+            "digestão extracelular",
+            "produção de bile",
+            "síntese de proteínas"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Na respiração humana, as trocas gasosas ocorrem nos:",
+          "opcoes": [
+            "alvéolos",
+            "bronquíolos apenas",
+            "diafragma",
+            "brônquios"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A insulina reduz a glicose no sangue ao favorecer sua:",
+          "opcoes": [
+            "entrada nas células",
+            "conversão em oxigênio",
+            "produção no fígado",
+            "excreção imediata"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A relação em que ambas as espécies se beneficiam é:",
+          "opcoes": [
+            "mutualismo",
+            "amensalismo",
+            "predação",
+            "parasitismo"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O tecido que conduz impulsos nervosos é o:",
+          "opcoes": [
+            "conjuntivo",
+            "nervoso",
+            "muscular",
+            "epitelial"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A organela responsável pela respiração celular é a:",
+          "opcoes": [
+            "ribossomo",
+            "lisossomo",
+            "cloroplasto",
+            "mitocôndria"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "As enzimas atuam principalmente como:",
+          "opcoes": [
+            "fontes de DNA",
+            "hormônios sexuais",
+            "anticorpos estruturais",
+            "catalisadores biológicos"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A meiose produz células com:",
+          "opcoes": [
+            "metade dos cromossomos",
+            "nenhum cromossomo",
+            "cromossomos idênticos sempre",
+            "o dobro de cromossomos"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "704827836195871c5ee2aed0",
+      "titulo": "Desafio Médio de Física I",
+      "categoria": "Física",
+      "dificuldade": "media-dificil",
+      "codigo": "K3FCAI",
+      "perguntas": [
+        {
+          "pergunta": "Um corpo em movimento retilíneo uniforme possui aceleração:",
+          "opcoes": [
+            "constante e positiva",
+            "nula",
+            "variável",
+            "igual à velocidade"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A resistência elétrica é medida em:",
+          "opcoes": [
+            "ampere",
+            "volt",
+            "ohm",
+            "joule"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A energia potencial gravitacional depende da altura e da:",
+          "opcoes": [
+            "massa",
+            "temperatura",
+            "carga elétrica",
+            "frequência"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Quando a luz passa do ar para a água, sua velocidade:",
+          "opcoes": [
+            "aumenta",
+            "diminui",
+            "fica infinita",
+            "não se altera sempre"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O trabalho de uma força é nulo quando força e deslocamento são:",
+          "opcoes": [
+            "paralelos",
+            "perpendiculares",
+            "iguais",
+            "opostos sempre"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A frequência de uma onda é medida em:",
+          "opcoes": [
+            "hertz",
+            "newton",
+            "pascal",
+            "tesla"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A pressão é definida como força dividida pela:",
+          "opcoes": [
+            "massa",
+            "área",
+            "velocidade",
+            "energia"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em um circuito em série, a corrente é:",
+          "opcoes": [
+            "a mesma em todos os componentes",
+            "nula no resistor",
+            "maior no primeiro componente",
+            "igual à tensão"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O impulso de uma força está relacionado à variação da:",
+          "opcoes": [
+            "quantidade de movimento",
+            "temperatura",
+            "densidade",
+            "potência luminosa"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A terceira lei de Newton trata de forças:",
+          "opcoes": [
+            "sem relação",
+            "de ação e reação",
+            "sempre paralelas",
+            "apenas gravitacionais"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "7e92fa4d64cd02915f57e446",
+      "titulo": "Desafio Médio de Física II",
+      "categoria": "Física",
+      "dificuldade": "media-dificil",
+      "codigo": "IIV8CO",
+      "perguntas": [
+        {
+          "pergunta": "A terceira lei de Newton trata de forças:",
+          "opcoes": [
+            "de ação e reação",
+            "sempre paralelas",
+            "apenas gravitacionais",
+            "sem relação"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O impulso de uma força está relacionado à variação da:",
+          "opcoes": [
+            "temperatura",
+            "densidade",
+            "potência luminosa",
+            "quantidade de movimento"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em um circuito em série, a corrente é:",
+          "opcoes": [
+            "nula no resistor",
+            "maior no primeiro componente",
+            "igual à tensão",
+            "a mesma em todos os componentes"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A pressão é definida como força dividida pela:",
+          "opcoes": [
+            "área",
+            "velocidade",
+            "energia",
+            "massa"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A frequência de uma onda é medida em:",
+          "opcoes": [
+            "newton",
+            "pascal",
+            "tesla",
+            "hertz"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O trabalho de uma força é nulo quando força e deslocamento são:",
+          "opcoes": [
+            "perpendiculares",
+            "iguais",
+            "opostos sempre",
+            "paralelos"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Quando a luz passa do ar para a água, sua velocidade:",
+          "opcoes": [
+            "diminui",
+            "fica infinita",
+            "não se altera sempre",
+            "aumenta"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A energia potencial gravitacional depende da altura e da:",
+          "opcoes": [
+            "temperatura",
+            "carga elétrica",
+            "frequência",
+            "massa"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A resistência elétrica é medida em:",
+          "opcoes": [
+            "volt",
+            "ohm",
+            "joule",
+            "ampere"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Um corpo em movimento retilíneo uniforme possui aceleração:",
+          "opcoes": [
+            "nula",
+            "variável",
+            "igual à velocidade",
+            "constante e positiva"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "ad7fbfa4bec900fe8b96a1e2",
+      "titulo": "Desafio Médio de Química I",
+      "categoria": "Química",
+      "dificuldade": "media-dificil",
+      "codigo": "RR7LQC",
+      "perguntas": [
+        {
+          "pergunta": "Uma ligação iônica ocorre tipicamente entre:",
+          "opcoes": [
+            "dois ametais",
+            "metal e ametal",
+            "metal e não metal",
+            "gases nobres"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O número de prótons de um átomo define seu:",
+          "opcoes": [
+            "número atômico",
+            "número de massa",
+            "nível energético",
+            "isótopo"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Uma reação que libera calor é:",
+          "opcoes": [
+            "endotérmica",
+            "exotérmica",
+            "isotérmica",
+            "nuclear sempre"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A molaridade é expressa em:",
+          "opcoes": [
+            "mol/L",
+            "g/L²",
+            "L/mol²",
+            "kg/m³ apenas"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Catalisadores aumentam a velocidade da reação ao:",
+          "opcoes": [
+            "reduzir a energia de ativação",
+            "aumentar a massa dos produtos",
+            "serem consumidos",
+            "mudar os elementos"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Isótopos possuem o mesmo número de prótons e diferentes números de:",
+          "opcoes": [
+            "elétrons apenas",
+            "nêutrons",
+            "moléculas",
+            "ligações"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Uma solução de pH 3 é mais ácida que uma de pH:",
+          "opcoes": [
+            "2",
+            "1",
+            "4",
+            "3"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A oxidação corresponde à:",
+          "opcoes": [
+            "perda de elétrons",
+            "ganho de elétrons",
+            "perda de prótons sempre",
+            "formação de nêutrons"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A função orgânica que contém o grupo -OH ligado a carbono saturado é:",
+          "opcoes": [
+            "álcool",
+            "aldeído",
+            "cetona",
+            "éster"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Na tabela periódica, elementos do mesmo grupo tendem a ter:",
+          "opcoes": [
+            "propriedades químicas semelhantes",
+            "mesma massa",
+            "mesmo número de nêutrons",
+            "mesmo período"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "302915f0e806b16dc8a2cc12",
+      "titulo": "Desafio Médio de Química II",
+      "categoria": "Química",
+      "dificuldade": "media-dificil",
+      "codigo": "PCUT4X",
+      "perguntas": [
+        {
+          "pergunta": "Na tabela periódica, elementos do mesmo grupo tendem a ter:",
+          "opcoes": [
+            "mesma massa",
+            "mesmo número de nêutrons",
+            "mesmo período",
+            "propriedades químicas semelhantes"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A função orgânica que contém o grupo -OH ligado a carbono saturado é:",
+          "opcoes": [
+            "aldeído",
+            "cetona",
+            "éster",
+            "álcool"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A oxidação corresponde à:",
+          "opcoes": [
+            "ganho de elétrons",
+            "perda de prótons sempre",
+            "formação de nêutrons",
+            "perda de elétrons"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Uma solução de pH 3 é mais ácida que uma de pH:",
+          "opcoes": [
+            "1",
+            "4",
+            "3",
+            "2"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Isótopos possuem o mesmo número de prótons e diferentes números de:",
+          "opcoes": [
+            "nêutrons",
+            "moléculas",
+            "ligações",
+            "elétrons apenas"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Catalisadores aumentam a velocidade da reação ao:",
+          "opcoes": [
+            "aumentar a massa dos produtos",
+            "serem consumidos",
+            "mudar os elementos",
+            "reduzir a energia de ativação"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A molaridade é expressa em:",
+          "opcoes": [
+            "g/L²",
+            "L/mol²",
+            "kg/m³ apenas",
+            "mol/L"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Uma reação que libera calor é:",
+          "opcoes": [
+            "exotérmica",
+            "isotérmica",
+            "nuclear sempre",
+            "endotérmica"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O número de prótons de um átomo define seu:",
+          "opcoes": [
+            "número de massa",
+            "nível energético",
+            "isótopo",
+            "número atômico"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Uma ligação iônica ocorre tipicamente entre:",
+          "opcoes": [
+            "metal e ametal",
+            "metal e não metal",
+            "gases nobres",
+            "dois ametais"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "372a2a059482b4a8e4d8724d",
+      "titulo": "Desafio Médio de Inglês I",
+      "categoria": "Inglês",
+      "dificuldade": "media-dificil",
+      "codigo": "3DRQH6",
+      "perguntas": [
+        {
+          "pergunta": "Choose the correct option: “If I had known, I ___ earlier.”",
+          "opcoes": [
+            "will leave",
+            "would have left",
+            "leave",
+            "am leaving"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "The word “although” expresses:",
+          "opcoes": [
+            "contrast",
+            "cause",
+            "purpose",
+            "addition"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Complete: “She has lived here ___ 2019.”",
+          "opcoes": [
+            "for",
+            "since",
+            "during",
+            "by"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Which sentence is in the passive voice?",
+          "opcoes": [
+            "They built the bridge.",
+            "The bridge was built.",
+            "They are building it.",
+            "Build the bridge."
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "“Reliable” is closest in meaning to:",
+          "opcoes": [
+            "trustworthy",
+            "expensive",
+            "temporary",
+            "dangerous"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Complete: “I am interested ___ science.”",
+          "opcoes": [
+            "on",
+            "at",
+            "in",
+            "by"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "The plural of “analysis” is:",
+          "opcoes": [
+            "analysises",
+            "analyses",
+            "analysis",
+            "analysies"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Choose the correct reported speech: He said, “I am tired.”",
+          "opcoes": [
+            "He said he is tired.",
+            "He said he was tired.",
+            "He says he tired.",
+            "He said I was tired."
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "“Despite” is normally followed by:",
+          "opcoes": [
+            "a noun or gerund",
+            "a bare infinitive only",
+            "a question word",
+            "a modal verb"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Complete: “Neither the teacher nor the students ___ late.”",
+          "opcoes": [
+            "was",
+            "is",
+            "were",
+            "be"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "9eed0a5dbc52286aadb28fa0",
+      "titulo": "Desafio Médio de Inglês II",
+      "categoria": "Inglês",
+      "dificuldade": "media-dificil",
+      "codigo": "B5XQAT",
+      "perguntas": [
+        {
+          "pergunta": "Complete: “Neither the teacher nor the students ___ late.”",
+          "opcoes": [
+            "is",
+            "were",
+            "be",
+            "was"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "“Despite” is normally followed by:",
+          "opcoes": [
+            "a bare infinitive only",
+            "a question word",
+            "a modal verb",
+            "a noun or gerund"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Choose the correct reported speech: He said, “I am tired.”",
+          "opcoes": [
+            "He said he was tired.",
+            "He says he tired.",
+            "He said I was tired.",
+            "He said he is tired."
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "The plural of “analysis” is:",
+          "opcoes": [
+            "analyses",
+            "analysis",
+            "analysies",
+            "analysises"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Complete: “I am interested ___ science.”",
+          "opcoes": [
+            "at",
+            "in",
+            "by",
+            "on"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "“Reliable” is closest in meaning to:",
+          "opcoes": [
+            "expensive",
+            "temporary",
+            "dangerous",
+            "trustworthy"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Which sentence is in the passive voice?",
+          "opcoes": [
+            "The bridge was built.",
+            "They are building it.",
+            "Build the bridge.",
+            "They built the bridge."
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Complete: “She has lived here ___ 2019.”",
+          "opcoes": [
+            "since",
+            "during",
+            "by",
+            "for"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "The word “although” expresses:",
+          "opcoes": [
+            "cause",
+            "purpose",
+            "addition",
+            "contrast"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Choose the correct option: “If I had known, I ___ earlier.”",
+          "opcoes": [
+            "would have left",
+            "leave",
+            "am leaving",
+            "will leave"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "07b2c63ff21b2a4bb37c62c0",
+      "titulo": "Desafio Médio de Literatura I",
+      "categoria": "Literatura",
+      "dificuldade": "media-dificil",
+      "codigo": "N4SXX9",
+      "perguntas": [
+        {
+          "pergunta": "O Realismo brasileiro caracteriza-se pela:",
+          "opcoes": [
+            "idealização amorosa",
+            "análise crítica da sociedade",
+            "valorização do medievalismo",
+            "evasão absoluta"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em “Memórias Póstumas de Brás Cubas”, o narrador é:",
+          "opcoes": [
+            "onisciente neutro",
+            "um defunto autor",
+            "um narrador testemunha",
+            "um narrador infantil"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O Modernismo brasileiro teve como marco inicial:",
+          "opcoes": [
+            "Semana de 1922",
+            "Inconfidência Mineira",
+            "Arcadismo",
+            "Romantismo"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A intertextualidade ocorre quando um texto:",
+          "opcoes": [
+            "dialoga com outro texto",
+            "não possui autor",
+            "usa somente números",
+            "abandona a linguagem"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O foco narrativo em primeira pessoa limita-se geralmente:",
+          "opcoes": [
+            "ao conhecimento do narrador",
+            "à visão do leitor",
+            "ao futuro da história",
+            "à descrição científica"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O verso sem métrica fixa e sem rima obrigatória é chamado:",
+          "opcoes": [
+            "verso livre",
+            "redondilha",
+            "soneto",
+            "alexandrino"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O Naturalismo enfatiza explicações ligadas ao:",
+          "opcoes": [
+            "determinismo e meio",
+            "idealismo platônico",
+            "heroísmo medieval",
+            "sobrenatural religioso"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A ironia produz sentido ao:",
+          "opcoes": [
+            "afirmar algo que sugere o contrário",
+            "repetir literalmente",
+            "eliminar ambiguidades",
+            "usar apenas fatos"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A obra “O Cortiço”, de Aluísio Azevedo, pertence ao:",
+          "opcoes": [
+            "Naturalismo",
+            "Trovadorismo",
+            "Arcadismo",
+            "Simbolismo"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A função poética da linguagem destaca:",
+          "opcoes": [
+            "a forma da mensagem",
+            "apenas o referente",
+            "o canal físico",
+            "a ordem do emissor"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "4e0ddead1aeae77a915ff5d2",
+      "titulo": "Desafio Médio de Literatura II",
+      "categoria": "Literatura",
+      "dificuldade": "media-dificil",
+      "codigo": "USMYD5",
+      "perguntas": [
+        {
+          "pergunta": "A função poética da linguagem destaca:",
+          "opcoes": [
+            "apenas o referente",
+            "o canal físico",
+            "a ordem do emissor",
+            "a forma da mensagem"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A obra “O Cortiço”, de Aluísio Azevedo, pertence ao:",
+          "opcoes": [
+            "Trovadorismo",
+            "Arcadismo",
+            "Simbolismo",
+            "Naturalismo"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A ironia produz sentido ao:",
+          "opcoes": [
+            "repetir literalmente",
+            "eliminar ambiguidades",
+            "usar apenas fatos",
+            "afirmar algo que sugere o contrário"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O Naturalismo enfatiza explicações ligadas ao:",
+          "opcoes": [
+            "idealismo platônico",
+            "heroísmo medieval",
+            "sobrenatural religioso",
+            "determinismo e meio"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O verso sem métrica fixa e sem rima obrigatória é chamado:",
+          "opcoes": [
+            "redondilha",
+            "soneto",
+            "alexandrino",
+            "verso livre"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O foco narrativo em primeira pessoa limita-se geralmente:",
+          "opcoes": [
+            "à visão do leitor",
+            "ao futuro da história",
+            "à descrição científica",
+            "ao conhecimento do narrador"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A intertextualidade ocorre quando um texto:",
+          "opcoes": [
+            "não possui autor",
+            "usa somente números",
+            "abandona a linguagem",
+            "dialoga com outro texto"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O Modernismo brasileiro teve como marco inicial:",
+          "opcoes": [
+            "Inconfidência Mineira",
+            "Arcadismo",
+            "Romantismo",
+            "Semana de 1922"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em “Memórias Póstumas de Brás Cubas”, o narrador é:",
+          "opcoes": [
+            "um defunto autor",
+            "um narrador testemunha",
+            "um narrador infantil",
+            "onisciente neutro"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O Realismo brasileiro caracteriza-se pela:",
+          "opcoes": [
+            "análise crítica da sociedade",
+            "valorização do medievalismo",
+            "evasão absoluta",
+            "idealização amorosa"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "9477e9e2b17613a8af0e4032",
+      "titulo": "Desafio Médio de Tecnologia I",
+      "categoria": "Tecnologia",
+      "dificuldade": "media-dificil",
+      "codigo": "BZOTUH",
+      "perguntas": [
+        {
+          "pergunta": "Em segurança digital, phishing é:",
+          "opcoes": [
+            "fraude para obter dados por engenharia social",
+            "backup automático",
+            "criptografia de disco",
+            "atualização de sistema"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Uma API é usada para:",
+          "opcoes": [
+            "permitir comunicação entre sistemas",
+            "aumentar a memória física",
+            "resfriar o processador",
+            "substituir o sistema operacional"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em bancos de dados, uma chave primária deve:",
+          "opcoes": [
+            "identificar registros de forma única",
+            "repetir valores",
+            "armazenar imagens apenas",
+            "ser sempre textual"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "HTTPS protege a comunicação principalmente com:",
+          "opcoes": [
+            "TLS",
+            "FTP",
+            "CSS",
+            "DNS puro"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O algoritmo de busca binária exige uma lista:",
+          "opcoes": [
+            "ordenada",
+            "aleatória",
+            "vazia",
+            "duplicada obrigatoriamente"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Machine learning supervisionado utiliza:",
+          "opcoes": [
+            "dados rotulados",
+            "nenhum dado",
+            "somente regras fixas",
+            "apenas imagens sintéticas"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O princípio da menor permissão recomenda:",
+          "opcoes": [
+            "conceder apenas acessos necessários",
+            "dar acesso total",
+            "compartilhar senhas",
+            "desativar logs"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Git é principalmente um sistema de:",
+          "opcoes": [
+            "controle de versão",
+            "edição de imagens",
+            "gerenciamento de memória",
+            "transmissão de vídeo"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em HTML, o atributo alt de uma imagem favorece:",
+          "opcoes": [
+            "acessibilidade e descrição alternativa",
+            "criptografia",
+            "compressão obrigatória",
+            "execução de JavaScript"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Uma transação ACID deve preservar principalmente:",
+          "opcoes": [
+            "consistência dos dados",
+            "cores da interface",
+            "velocidade da rede",
+            "resolução da tela"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "3febd279cd3ff63049a878c0",
+      "titulo": "Desafio Médio de Tecnologia II",
+      "categoria": "Tecnologia",
+      "dificuldade": "media-dificil",
+      "codigo": "8R1SGE",
+      "perguntas": [
+        {
+          "pergunta": "Uma transação ACID deve preservar principalmente:",
+          "opcoes": [
+            "cores da interface",
+            "velocidade da rede",
+            "resolução da tela",
+            "consistência dos dados"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em HTML, o atributo alt de uma imagem favorece:",
+          "opcoes": [
+            "criptografia",
+            "compressão obrigatória",
+            "execução de JavaScript",
+            "acessibilidade e descrição alternativa"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Git é principalmente um sistema de:",
+          "opcoes": [
+            "edição de imagens",
+            "gerenciamento de memória",
+            "transmissão de vídeo",
+            "controle de versão"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O princípio da menor permissão recomenda:",
+          "opcoes": [
+            "dar acesso total",
+            "compartilhar senhas",
+            "desativar logs",
+            "conceder apenas acessos necessários"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Machine learning supervisionado utiliza:",
+          "opcoes": [
+            "nenhum dado",
+            "somente regras fixas",
+            "apenas imagens sintéticas",
+            "dados rotulados"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O algoritmo de busca binária exige uma lista:",
+          "opcoes": [
+            "aleatória",
+            "vazia",
+            "duplicada obrigatoriamente",
+            "ordenada"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "HTTPS protege a comunicação principalmente com:",
+          "opcoes": [
+            "FTP",
+            "CSS",
+            "DNS puro",
+            "TLS"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em bancos de dados, uma chave primária deve:",
+          "opcoes": [
+            "repetir valores",
+            "armazenar imagens apenas",
+            "ser sempre textual",
+            "identificar registros de forma única"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Uma API é usada para:",
+          "opcoes": [
+            "aumentar a memória física",
+            "resfriar o processador",
+            "substituir o sistema operacional",
+            "permitir comunicação entre sistemas"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em segurança digital, phishing é:",
+          "opcoes": [
+            "backup automático",
+            "criptografia de disco",
+            "atualização de sistema",
+            "fraude para obter dados por engenharia social"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "fac61a20181cec9778dfedeb",
+      "titulo": "Desafio Médio de Artes I",
+      "categoria": "Artes",
+      "dificuldade": "media-dificil",
+      "codigo": "SU5009",
+      "perguntas": [
+        {
+          "pergunta": "O Barroco é marcado frequentemente por:",
+          "opcoes": [
+            "contrastes e conflito entre material e espiritual",
+            "simplicidade geométrica absoluta",
+            "ausência de religiosidade",
+            "rejeição do drama"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A perspectiva linear cria profundidade por meio de:",
+          "opcoes": [
+            "linhas convergentes",
+            "cores fluorescentes apenas",
+            "textura sonora",
+            "simetria obrigatória"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O Impressionismo valorizou:",
+          "opcoes": [
+            "luz e percepção momentânea",
+            "temas exclusivamente mitológicos",
+            "contornos rígidos",
+            "monocromia"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A instalação artística geralmente:",
+          "opcoes": [
+            "ocupa e transforma um espaço",
+            "existe só em papel",
+            "é sempre uma escultura clássica",
+            "não envolve o público"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A composição visual organiza:",
+          "opcoes": [
+            "elementos como forma, cor e equilíbrio",
+            "apenas o título",
+            "somente o material",
+            "o preço da obra"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A arte abstrata não depende necessariamente de:",
+          "opcoes": [
+            "representação figurativa reconhecível",
+            "cor",
+            "forma",
+            "composição"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O cubismo explorou a representação de objetos por:",
+          "opcoes": [
+            "múltiplos pontos de vista",
+            "uma única perspectiva fotográfica",
+            "ausência de geometria",
+            "paisagens realistas apenas"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O ritmo musical resulta da organização de:",
+          "opcoes": [
+            "durações e pulsações",
+            "cores e volumes",
+            "texturas e tintas",
+            "perspectivas"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A xilogravura utiliza como matriz principalmente:",
+          "opcoes": [
+            "madeira",
+            "vidro líquido",
+            "tecido",
+            "argila sem secar"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A arte pública é produzida ou apresentada:",
+          "opcoes": [
+            "em espaços de acesso coletivo",
+            "somente em coleções privadas",
+            "apenas em livros",
+            "sem relação com o ambiente"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "526d4a41a935980b4a373a9e",
+      "titulo": "Desafio Médio de Artes II",
+      "categoria": "Artes",
+      "dificuldade": "media-dificil",
+      "codigo": "MWB66J",
+      "perguntas": [
+        {
+          "pergunta": "A arte pública é produzida ou apresentada:",
+          "opcoes": [
+            "somente em coleções privadas",
+            "apenas em livros",
+            "sem relação com o ambiente",
+            "em espaços de acesso coletivo"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A xilogravura utiliza como matriz principalmente:",
+          "opcoes": [
+            "vidro líquido",
+            "tecido",
+            "argila sem secar",
+            "madeira"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O ritmo musical resulta da organização de:",
+          "opcoes": [
+            "cores e volumes",
+            "texturas e tintas",
+            "perspectivas",
+            "durações e pulsações"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O cubismo explorou a representação de objetos por:",
+          "opcoes": [
+            "uma única perspectiva fotográfica",
+            "ausência de geometria",
+            "paisagens realistas apenas",
+            "múltiplos pontos de vista"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A arte abstrata não depende necessariamente de:",
+          "opcoes": [
+            "cor",
+            "forma",
+            "composição",
+            "representação figurativa reconhecível"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A composição visual organiza:",
+          "opcoes": [
+            "apenas o título",
+            "somente o material",
+            "o preço da obra",
+            "elementos como forma, cor e equilíbrio"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A instalação artística geralmente:",
+          "opcoes": [
+            "existe só em papel",
+            "é sempre uma escultura clássica",
+            "não envolve o público",
+            "ocupa e transforma um espaço"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O Impressionismo valorizou:",
+          "opcoes": [
+            "temas exclusivamente mitológicos",
+            "contornos rígidos",
+            "monocromia",
+            "luz e percepção momentânea"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A perspectiva linear cria profundidade por meio de:",
+          "opcoes": [
+            "cores fluorescentes apenas",
+            "textura sonora",
+            "simetria obrigatória",
+            "linhas convergentes"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O Barroco é marcado frequentemente por:",
+          "opcoes": [
+            "simplicidade geométrica absoluta",
+            "ausência de religiosidade",
+            "rejeição do drama",
+            "contrastes e conflito entre material e espiritual"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "06d33808b54b5037d7e56ab0",
+      "titulo": "Desafio Médio de Filosofia I",
+      "categoria": "Filosofia",
+      "dificuldade": "media-dificil",
+      "codigo": "IQ2EHH",
+      "perguntas": [
+        {
+          "pergunta": "Para Platão, o conhecimento verdadeiro relaciona-se ao mundo:",
+          "opcoes": [
+            "das ideias",
+            "das aparências sensíveis apenas",
+            "das opiniões políticas",
+            "dos mitos populares"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O imperativo categórico é associado a:",
+          "opcoes": [
+            "Kant",
+            "Marx",
+            "Aristóteles",
+            "Epicuro"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Para Aristóteles, a virtude está relacionada ao:",
+          "opcoes": [
+            "justo meio",
+            "excesso constante",
+            "abandono da razão",
+            "prazer imediato"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O existencialismo enfatiza a:",
+          "opcoes": [
+            "liberdade e responsabilidade do indivíduo",
+            "predestinação absoluta",
+            "negação da escolha",
+            "superioridade da técnica"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O método socrático baseia-se principalmente em:",
+          "opcoes": [
+            "perguntas e diálogo crítico",
+            "memorização dogmática",
+            "experimentos químicos",
+            "silêncio contemplativo"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Para Hobbes, o Estado surge para conter:",
+          "opcoes": [
+            "o conflito no estado de natureza",
+            "a matemática",
+            "a produção artística",
+            "a observação científica"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O empirismo considera a experiência uma fonte central de:",
+          "opcoes": [
+            "conhecimento",
+            "autoridade política",
+            "beleza artística",
+            "moral religiosa apenas"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A falácia ad hominem ataca:",
+          "opcoes": [
+            "a pessoa em vez do argumento",
+            "a conclusão matemática",
+            "a definição de termos",
+            "a evidência relevante"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Para Nietzsche, a crítica à moral tradicional envolve a ideia de:",
+          "opcoes": [
+            "transvaloração dos valores",
+            "retorno ao feudalismo",
+            "negação da criação",
+            "imitação platônica"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A ética consequencialista avalia ações sobretudo por:",
+          "opcoes": [
+            "seus resultados",
+            "a intenção apenas",
+            "a tradição",
+            "a aparência"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "3051c188786edb4f2d3f7e30",
+      "titulo": "Desafio Médio de Filosofia II",
+      "categoria": "Filosofia",
+      "dificuldade": "media-dificil",
+      "codigo": "LD7MX0",
+      "perguntas": [
+        {
+          "pergunta": "A ética consequencialista avalia ações sobretudo por:",
+          "opcoes": [
+            "a intenção apenas",
+            "a tradição",
+            "a aparência",
+            "seus resultados"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Para Nietzsche, a crítica à moral tradicional envolve a ideia de:",
+          "opcoes": [
+            "retorno ao feudalismo",
+            "negação da criação",
+            "imitação platônica",
+            "transvaloração dos valores"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A falácia ad hominem ataca:",
+          "opcoes": [
+            "a conclusão matemática",
+            "a definição de termos",
+            "a evidência relevante",
+            "a pessoa em vez do argumento"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O empirismo considera a experiência uma fonte central de:",
+          "opcoes": [
+            "autoridade política",
+            "beleza artística",
+            "moral religiosa apenas",
+            "conhecimento"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Para Hobbes, o Estado surge para conter:",
+          "opcoes": [
+            "a matemática",
+            "a produção artística",
+            "a observação científica",
+            "o conflito no estado de natureza"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O método socrático baseia-se principalmente em:",
+          "opcoes": [
+            "memorização dogmática",
+            "experimentos químicos",
+            "silêncio contemplativo",
+            "perguntas e diálogo crítico"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O existencialismo enfatiza a:",
+          "opcoes": [
+            "predestinação absoluta",
+            "negação da escolha",
+            "superioridade da técnica",
+            "liberdade e responsabilidade do indivíduo"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Para Aristóteles, a virtude está relacionada ao:",
+          "opcoes": [
+            "excesso constante",
+            "abandono da razão",
+            "prazer imediato",
+            "justo meio"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O imperativo categórico é associado a:",
+          "opcoes": [
+            "Marx",
+            "Aristóteles",
+            "Epicuro",
+            "Kant"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Para Platão, o conhecimento verdadeiro relaciona-se ao mundo:",
+          "opcoes": [
+            "das aparências sensíveis apenas",
+            "das opiniões políticas",
+            "dos mitos populares",
+            "das ideias"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "adc6e30c5b9cb13a3a26d025",
+      "titulo": "Desafio Médio de Educação Financeira I",
+      "categoria": "Educação Financeira",
+      "dificuldade": "media-dificil",
+      "codigo": "KVCQ6H",
+      "perguntas": [
+        {
+          "pergunta": "Juros compostos incidem sobre:",
+          "opcoes": [
+            "capital e juros acumulados",
+            "capital inicial apenas",
+            "taxas sem capital",
+            "inflação somente"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Diversificação reduz principalmente:",
+          "opcoes": [
+            "risco concentrado",
+            "renda garantida",
+            "necessidade de planejamento",
+            "liquidez de todos os ativos"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O custo de oportunidade representa:",
+          "opcoes": [
+            "o benefício da alternativa abandonada",
+            "a taxa de inflação",
+            "o imposto fixo",
+            "o saldo bancário"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Liquidez de um investimento indica:",
+          "opcoes": [
+            "facilidade de convertê-lo em dinheiro",
+            "risco de perda zero",
+            "rentabilidade máxima",
+            "prazo infinito"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Inflação elevada reduz o poder de compra quando:",
+          "opcoes": [
+            "preços sobem mais que a renda",
+            "preços caem sempre",
+            "renda aumenta mais que preços",
+            "não há moeda"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Uma reserva de emergência deve priorizar:",
+          "opcoes": [
+            "liquidez e baixo risco",
+            "especulação",
+            "prazo muito longo",
+            "concentração em um ativo"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Valor presente líquido considera:",
+          "opcoes": [
+            "fluxos futuros descontados",
+            "somente o preço inicial",
+            "apenas impostos",
+            "o saldo sem prazo"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A taxa de juros real corresponde aproximadamente à taxa nominal menos:",
+          "opcoes": [
+            "inflação",
+            "renda",
+            "liquidez",
+            "patrimônio"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Endividamento sustentável exige que parcelas:",
+          "opcoes": [
+            "caibam no orçamento",
+            "superem a renda",
+            "sejam ignoradas",
+            "não tenham prazo"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Um orçamento base zero começa:",
+          "opcoes": [
+            "justificando cada despesa",
+            "repetindo o gasto anterior",
+            "eliminando toda renda",
+            "investindo sem meta"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "d07749228299b1369c7d9b8e",
+      "titulo": "Desafio Médio de Educação Financeira II",
+      "categoria": "Educação Financeira",
+      "dificuldade": "media-dificil",
+      "codigo": "2S8SJJ",
+      "perguntas": [
+        {
+          "pergunta": "Um orçamento base zero começa:",
+          "opcoes": [
+            "repetindo o gasto anterior",
+            "eliminando toda renda",
+            "investindo sem meta",
+            "justificando cada despesa"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Endividamento sustentável exige que parcelas:",
+          "opcoes": [
+            "superem a renda",
+            "sejam ignoradas",
+            "não tenham prazo",
+            "caibam no orçamento"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A taxa de juros real corresponde aproximadamente à taxa nominal menos:",
+          "opcoes": [
+            "renda",
+            "liquidez",
+            "patrimônio",
+            "inflação"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Valor presente líquido considera:",
+          "opcoes": [
+            "somente o preço inicial",
+            "apenas impostos",
+            "o saldo sem prazo",
+            "fluxos futuros descontados"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Uma reserva de emergência deve priorizar:",
+          "opcoes": [
+            "especulação",
+            "prazo muito longo",
+            "concentração em um ativo",
+            "liquidez e baixo risco"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Inflação elevada reduz o poder de compra quando:",
+          "opcoes": [
+            "preços caem sempre",
+            "renda aumenta mais que preços",
+            "não há moeda",
+            "preços sobem mais que a renda"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Liquidez de um investimento indica:",
+          "opcoes": [
+            "risco de perda zero",
+            "rentabilidade máxima",
+            "prazo infinito",
+            "facilidade de convertê-lo em dinheiro"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O custo de oportunidade representa:",
+          "opcoes": [
+            "a taxa de inflação",
+            "o imposto fixo",
+            "o saldo bancário",
+            "o benefício da alternativa abandonada"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Diversificação reduz principalmente:",
+          "opcoes": [
+            "renda garantida",
+            "necessidade de planejamento",
+            "liquidez de todos os ativos",
+            "risco concentrado"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Juros compostos incidem sobre:",
+          "opcoes": [
+            "capital inicial apenas",
+            "taxas sem capital",
+            "inflação somente",
+            "capital e juros acumulados"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "fcd7bfe13f423765b9970dfb",
+      "titulo": "Desafio Médio de Saúde I",
+      "categoria": "Saúde",
+      "dificuldade": "media-dificil",
+      "codigo": "9UK7MG",
+      "perguntas": [
+        {
+          "pergunta": "A resistência bacteriana é favorecida principalmente pelo:",
+          "opcoes": [
+            "uso inadequado de antibióticos",
+            "uso de vacinas",
+            "consumo de água",
+            "sono regular"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O sistema imunológico adaptativo possui:",
+          "opcoes": [
+            "memória imunológica",
+            "apenas barreiras físicas",
+            "função exclusiva respiratória",
+            "nenhum anticorpo"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A hipertensão é um fator de risco para:",
+          "opcoes": [
+            "doenças cardiovasculares",
+            "miopia apenas",
+            "fraturas sempre",
+            "alergia alimentar"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Fibras alimentares auxiliam principalmente o:",
+          "opcoes": [
+            "trânsito intestinal",
+            "transporte de oxigênio",
+            "crescimento ósseo direto",
+            "controle da audição"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O sono adequado favorece:",
+          "opcoes": [
+            "memória e recuperação",
+            "desidratação",
+            "perda permanente de atenção",
+            "aumento da inflamação sempre"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A vacinação protege a população por estimular:",
+          "opcoes": [
+            "resposta imune específica",
+            "produção de antibiótico no ambiente",
+            "aumento da temperatura",
+            "destruição de todas as bactérias"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Uma dieta equilibrada deve considerar:",
+          "opcoes": [
+            "variedade e adequação nutricional",
+            "exclusão de todos os carboidratos",
+            "apenas suplementos",
+            "jejum permanente"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A atividade física regular pode melhorar:",
+          "opcoes": [
+            "capacidade cardiorrespiratória",
+            "todas as doenças sem exceção",
+            "necessidade de cigarro",
+            "desidratação crônica"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Saúde mental envolve também:",
+          "opcoes": [
+            "relações e contexto social",
+            "ausência total de emoções",
+            "isolamento obrigatório",
+            "apenas força física"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Higienização das mãos reduz:",
+          "opcoes": [
+            "transmissão de microrganismos",
+            "necessidade de vacinação",
+            "todas as doenças genéticas",
+            "poluição atmosférica"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "3da8db8a796d5d5fdcfc22b9",
+      "titulo": "Desafio Médio de Saúde II",
+      "categoria": "Saúde",
+      "dificuldade": "media-dificil",
+      "codigo": "9JNTYH",
+      "perguntas": [
+        {
+          "pergunta": "Higienização das mãos reduz:",
+          "opcoes": [
+            "necessidade de vacinação",
+            "todas as doenças genéticas",
+            "poluição atmosférica",
+            "transmissão de microrganismos"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Saúde mental envolve também:",
+          "opcoes": [
+            "ausência total de emoções",
+            "isolamento obrigatório",
+            "apenas força física",
+            "relações e contexto social"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A atividade física regular pode melhorar:",
+          "opcoes": [
+            "todas as doenças sem exceção",
+            "necessidade de cigarro",
+            "desidratação crônica",
+            "capacidade cardiorrespiratória"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Uma dieta equilibrada deve considerar:",
+          "opcoes": [
+            "exclusão de todos os carboidratos",
+            "apenas suplementos",
+            "jejum permanente",
+            "variedade e adequação nutricional"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A vacinação protege a população por estimular:",
+          "opcoes": [
+            "produção de antibiótico no ambiente",
+            "aumento da temperatura",
+            "destruição de todas as bactérias",
+            "resposta imune específica"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O sono adequado favorece:",
+          "opcoes": [
+            "desidratação",
+            "perda permanente de atenção",
+            "aumento da inflamação sempre",
+            "memória e recuperação"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Fibras alimentares auxiliam principalmente o:",
+          "opcoes": [
+            "transporte de oxigênio",
+            "crescimento ósseo direto",
+            "controle da audição",
+            "trânsito intestinal"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A hipertensão é um fator de risco para:",
+          "opcoes": [
+            "miopia apenas",
+            "fraturas sempre",
+            "alergia alimentar",
+            "doenças cardiovasculares"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O sistema imunológico adaptativo possui:",
+          "opcoes": [
+            "apenas barreiras físicas",
+            "função exclusiva respiratória",
+            "nenhum anticorpo",
+            "memória imunológica"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A resistência bacteriana é favorecida principalmente pelo:",
+          "opcoes": [
+            "uso de vacinas",
+            "consumo de água",
+            "sono regular",
+            "uso inadequado de antibióticos"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "b2fd44feead2e1bccfda2162",
+      "titulo": "Desafio Médio de Meio Ambiente I",
+      "categoria": "Meio Ambiente",
+      "dificuldade": "media-dificil",
+      "codigo": "ONSUUW",
+      "perguntas": [
+        {
+          "pergunta": "A eutrofização de rios pode resultar do excesso de:",
+          "opcoes": [
+            "nutrientes",
+            "oxigênio puro",
+            "areia limpa",
+            "luz solar"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A biomagnificação aumenta a concentração de poluentes:",
+          "opcoes": [
+            "ao longo da cadeia alimentar",
+            "apenas na água da chuva",
+            "no solo sem organismos",
+            "em produtores sempre menos"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O desmatamento pode alterar o ciclo:",
+          "opcoes": [
+            "hidrológico",
+            "das marés lunares",
+            "das rochas",
+            "do campo magnético apenas"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A economia circular busca:",
+          "opcoes": [
+            "reduzir desperdício e manter materiais em uso",
+            "aumentar descarte",
+            "eliminar reciclagem",
+            "usar recursos uma única vez"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O gás de efeito estufa mais associado à queima de combustíveis é:",
+          "opcoes": [
+            "CO₂",
+            "O₂",
+            "N₂",
+            "He"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Corredores ecológicos favorecem:",
+          "opcoes": [
+            "conectividade entre habitats",
+            "isolamento de espécies",
+            "urbanização de rios",
+            "redução da biodiversidade"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A mata ciliar contribui para:",
+          "opcoes": [
+            "proteger margens e reduzir erosão",
+            "aumentar assoreamento",
+            "secar rios",
+            "eliminar nascentes"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Pegada ecológica estima:",
+          "opcoes": [
+            "pressão do consumo sobre recursos naturais",
+            "temperatura do ar",
+            "idade de uma floresta",
+            "velocidade de rios"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Espécies invasoras podem causar:",
+          "opcoes": [
+            "desequilíbrio ecológico",
+            "aumento garantido da biodiversidade",
+            "fim da competição",
+            "restauração automática"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A energia eólica é considerada renovável porque usa:",
+          "opcoes": [
+            "movimento do vento",
+            "carvão",
+            "petróleo",
+            "urânio finito"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "573a9b4837f4a3680a510f63",
+      "titulo": "Desafio Médio de Meio Ambiente II",
+      "categoria": "Meio Ambiente",
+      "dificuldade": "media-dificil",
+      "codigo": "GRG7EG",
+      "perguntas": [
+        {
+          "pergunta": "A energia eólica é considerada renovável porque usa:",
+          "opcoes": [
+            "carvão",
+            "petróleo",
+            "urânio finito",
+            "movimento do vento"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Espécies invasoras podem causar:",
+          "opcoes": [
+            "aumento garantido da biodiversidade",
+            "fim da competição",
+            "restauração automática",
+            "desequilíbrio ecológico"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Pegada ecológica estima:",
+          "opcoes": [
+            "temperatura do ar",
+            "idade de uma floresta",
+            "velocidade de rios",
+            "pressão do consumo sobre recursos naturais"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A mata ciliar contribui para:",
+          "opcoes": [
+            "aumentar assoreamento",
+            "secar rios",
+            "eliminar nascentes",
+            "proteger margens e reduzir erosão"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Corredores ecológicos favorecem:",
+          "opcoes": [
+            "isolamento de espécies",
+            "urbanização de rios",
+            "redução da biodiversidade",
+            "conectividade entre habitats"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O gás de efeito estufa mais associado à queima de combustíveis é:",
+          "opcoes": [
+            "O₂",
+            "N₂",
+            "He",
+            "CO₂"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A economia circular busca:",
+          "opcoes": [
+            "aumentar descarte",
+            "eliminar reciclagem",
+            "usar recursos uma única vez",
+            "reduzir desperdício e manter materiais em uso"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O desmatamento pode alterar o ciclo:",
+          "opcoes": [
+            "das marés lunares",
+            "das rochas",
+            "do campo magnético apenas",
+            "hidrológico"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A biomagnificação aumenta a concentração de poluentes:",
+          "opcoes": [
+            "apenas na água da chuva",
+            "no solo sem organismos",
+            "em produtores sempre menos",
+            "ao longo da cadeia alimentar"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A eutrofização de rios pode resultar do excesso de:",
+          "opcoes": [
+            "oxigênio puro",
+            "areia limpa",
+            "luz solar",
+            "nutrientes"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "f5227a064abf38432af33a5a",
+      "titulo": "Desafio Médio de Conhecimentos Gerais I",
+      "categoria": "Conhecimentos Gerais",
+      "dificuldade": "media-dificil",
+      "codigo": "LU9PKC",
+      "perguntas": [
+        {
+          "pergunta": "A sede da Organização Mundial da Saúde fica em:",
+          "opcoes": [
+            "Genebra",
+            "Paris",
+            "Roma",
+            "Bruxelas"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O elemento químico de símbolo Fe é:",
+          "opcoes": [
+            "ferro",
+            "flúor",
+            "frâncio",
+            "fósforo"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A camada da atmosfera onde ocorre a maior parte do clima é a:",
+          "opcoes": [
+            "troposfera",
+            "estratosfera",
+            "mesosfera",
+            "exosfera"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O maior planeta do Sistema Solar é:",
+          "opcoes": [
+            "Júpiter",
+            "Saturno",
+            "Terra",
+            "Netuno"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A moeda oficial do Japão é o:",
+          "opcoes": [
+            "iene",
+            "won",
+            "yuan",
+            "baht"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A Declaração Universal dos Direitos Humanos foi adotada pela ONU em:",
+          "opcoes": [
+            "1948",
+            "1918",
+            "1968",
+            "1988"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O número romano XL representa:",
+          "opcoes": [
+            "40",
+            "60",
+            "90",
+            "110"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A fotossíntese ocorre principalmente nos:",
+          "opcoes": [
+            "cloroplastos",
+            "núcleos",
+            "lisossomos",
+            "centríolos"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O oceano que banha a costa leste do Brasil é o:",
+          "opcoes": [
+            "Atlântico",
+            "Pacífico",
+            "Índico",
+            "Ártico"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A unidade básica de informação digital é o:",
+          "opcoes": [
+            "bit",
+            "byte",
+            "pixel",
+            "hertz"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "f8021a5a76f54df7d20d2b39",
+      "titulo": "Desafio Médio de Conhecimentos Gerais II",
+      "categoria": "Conhecimentos Gerais",
+      "dificuldade": "media-dificil",
+      "codigo": "ONH8WM",
+      "perguntas": [
+        {
+          "pergunta": "A unidade básica de informação digital é o:",
+          "opcoes": [
+            "byte",
+            "pixel",
+            "hertz",
+            "bit"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O oceano que banha a costa leste do Brasil é o:",
+          "opcoes": [
+            "Pacífico",
+            "Índico",
+            "Ártico",
+            "Atlântico"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A fotossíntese ocorre principalmente nos:",
+          "opcoes": [
+            "núcleos",
+            "lisossomos",
+            "centríolos",
+            "cloroplastos"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O número romano XL representa:",
+          "opcoes": [
+            "60",
+            "90",
+            "110",
+            "40"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A Declaração Universal dos Direitos Humanos foi adotada pela ONU em:",
+          "opcoes": [
+            "1918",
+            "1968",
+            "1988",
+            "1948"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A moeda oficial do Japão é o:",
+          "opcoes": [
+            "won",
+            "yuan",
+            "baht",
+            "iene"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O maior planeta do Sistema Solar é:",
+          "opcoes": [
+            "Saturno",
+            "Terra",
+            "Netuno",
+            "Júpiter"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A camada da atmosfera onde ocorre a maior parte do clima é a:",
+          "opcoes": [
+            "estratosfera",
+            "mesosfera",
+            "exosfera",
+            "troposfera"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O elemento químico de símbolo Fe é:",
+          "opcoes": [
+            "flúor",
+            "frâncio",
+            "fósforo",
+            "ferro"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A sede da Organização Mundial da Saúde fica em:",
+          "opcoes": [
+            "Paris",
+            "Roma",
+            "Bruxelas",
+            "Genebra"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "9038fd9fd339acec750c489f",
+      "titulo": "Desafio Médio de Raciocínio I",
+      "categoria": "Raciocínio",
+      "dificuldade": "media-dificil",
+      "codigo": "81T2MO",
+      "perguntas": [
+        {
+          "pergunta": "Se todos A são B e nenhum B é C, então:",
+          "opcoes": [
+            "nenhum A é C",
+            "todo C é A",
+            "algum A é C",
+            "todo B é A"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Complete: 2, 6, 12, 20, 30, ...",
+          "opcoes": [
+            "36",
+            "40",
+            "42",
+            "44"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Se hoje é terça-feira, que dia será daqui a 45 dias?",
+          "opcoes": [
+            "quinta-feira",
+            "sexta-feira",
+            "sábado",
+            "domingo"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Um cubo possui quantas arestas?",
+          "opcoes": [
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A negação de “todos estudaram” é:",
+          "opcoes": [
+            "ninguém estudou",
+            "pelo menos um não estudou",
+            "todos não estudaram",
+            "alguns estudaram"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Se 5 máquinas fazem 5 peças em 5 minutos, 1 máquina faz 1 peça em:",
+          "opcoes": [
+            "1 minuto",
+            "5 minutos",
+            "10 minutos",
+            "25 minutos"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Qual número completa: 1, 1, 2, 3, 5, 8, ...",
+          "opcoes": [
+            "11",
+            "12",
+            "13",
+            "15"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em uma fila, Ana está antes de Bia e depois de Caio. Quem está no meio?",
+          "opcoes": [
+            "Ana",
+            "Bia",
+            "Caio",
+            "não é possível saber"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Se uma proposição é verdadeira, sua negação é:",
+          "opcoes": [
+            "verdadeira",
+            "falsa",
+            "indeterminada sempre",
+            "ambas"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Um relógio adianta 5 minutos por hora. Em 6 horas, adiantará:",
+          "opcoes": [
+            "11 min",
+            "25 min",
+            "30 min",
+            "35 min"
+          ],
+          "respostaCorreta": 2,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "12bd1ec45a278278398f03dd",
+      "titulo": "Desafio Médio de Raciocínio II",
+      "categoria": "Raciocínio",
+      "dificuldade": "media-dificil",
+      "codigo": "TRM52B",
+      "perguntas": [
+        {
+          "pergunta": "Um relógio adianta 5 minutos por hora. Em 6 horas, adiantará:",
+          "opcoes": [
+            "25 min",
+            "30 min",
+            "35 min",
+            "11 min"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Se uma proposição é verdadeira, sua negação é:",
+          "opcoes": [
+            "falsa",
+            "indeterminada sempre",
+            "ambas",
+            "verdadeira"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Em uma fila, Ana está antes de Bia e depois de Caio. Quem está no meio?",
+          "opcoes": [
+            "Bia",
+            "Caio",
+            "não é possível saber",
+            "Ana"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Qual número completa: 1, 1, 2, 3, 5, 8, ...",
+          "opcoes": [
+            "12",
+            "13",
+            "15",
+            "11"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Se 5 máquinas fazem 5 peças em 5 minutos, 1 máquina faz 1 peça em:",
+          "opcoes": [
+            "5 minutos",
+            "10 minutos",
+            "25 minutos",
+            "1 minuto"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A negação de “todos estudaram” é:",
+          "opcoes": [
+            "pelo menos um não estudou",
+            "todos não estudaram",
+            "alguns estudaram",
+            "ninguém estudou"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Um cubo possui quantas arestas?",
+          "opcoes": [
+            "10",
+            "12",
+            "14",
+            "8"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Se hoje é terça-feira, que dia será daqui a 45 dias?",
+          "opcoes": [
+            "sexta-feira",
+            "sábado",
+            "domingo",
+            "quinta-feira"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Complete: 2, 6, 12, 20, 30, ...",
+          "opcoes": [
+            "40",
+            "42",
+            "44",
+            "36"
+          ],
+          "respostaCorreta": 1,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Se todos A são B e nenhum B é C, então:",
+          "opcoes": [
+            "todo C é A",
+            "algum A é C",
+            "todo B é A",
+            "nenhum A é C"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "532906f71b2d28d3c8c324cf",
+      "titulo": "Desafio Médio de Revisão Escolar I",
+      "categoria": "Revisão Escolar",
+      "dificuldade": "media-dificil",
+      "codigo": "56RURU",
+      "perguntas": [
+        {
+          "pergunta": "Na fotossíntese, a clorofila capta principalmente:",
+          "opcoes": [
+            "energia luminosa",
+            "energia sonora",
+            "nitrogênio atmosférico",
+            "calor geotérmico"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A Revolução Industrial começou na:",
+          "opcoes": [
+            "Inglaterra",
+            "Rússia",
+            "Espanha",
+            "Grécia"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A oração “porque choveu” normalmente expressa:",
+          "opcoes": [
+            "causa",
+            "concessão",
+            "condição",
+            "finalidade"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A unidade de medida de potência é:",
+          "opcoes": [
+            "watt",
+            "joule",
+            "newton",
+            "pascal"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O continente com maior população é:",
+          "opcoes": [
+            "Ásia",
+            "África",
+            "Europa",
+            "América"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A Constituição é a lei:",
+          "opcoes": [
+            "fundamental de um Estado",
+            "exclusiva do município",
+            "apenas eleitoral",
+            "sem valor jurídico"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A mitose produz células:",
+          "opcoes": [
+            "geneticamente semelhantes",
+            "com metade dos cromossomos sempre",
+            "sem núcleo",
+            "exclusivamente sexuais"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A escala de um mapa relaciona:",
+          "opcoes": [
+            "distância representada e real",
+            "temperatura e altitude",
+            "população e renda",
+            "latitude e clima apenas"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A água é uma molécula formada por:",
+          "opcoes": [
+            "dois hidrogênios e um oxigênio",
+            "dois oxigênios e um carbono",
+            "um hidrogênio e dois carbonos",
+            "um só elemento"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A média aritmética soma os valores e divide pela:",
+          "opcoes": [
+            "quantidade de valores",
+            "maior valor",
+            "menor valor",
+            "diferença entre eles"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "6bf243b95bb155820d6cc9e5",
+      "titulo": "Desafio Médio de Revisão Escolar II",
+      "categoria": "Revisão Escolar",
+      "dificuldade": "media-dificil",
+      "codigo": "A4P6FV",
+      "perguntas": [
+        {
+          "pergunta": "A média aritmética soma os valores e divide pela:",
+          "opcoes": [
+            "maior valor",
+            "menor valor",
+            "diferença entre eles",
+            "quantidade de valores"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A água é uma molécula formada por:",
+          "opcoes": [
+            "dois oxigênios e um carbono",
+            "um hidrogênio e dois carbonos",
+            "um só elemento",
+            "dois hidrogênios e um oxigênio"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A escala de um mapa relaciona:",
+          "opcoes": [
+            "temperatura e altitude",
+            "população e renda",
+            "latitude e clima apenas",
+            "distância representada e real"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A mitose produz células:",
+          "opcoes": [
+            "com metade dos cromossomos sempre",
+            "sem núcleo",
+            "exclusivamente sexuais",
+            "geneticamente semelhantes"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A Constituição é a lei:",
+          "opcoes": [
+            "exclusiva do município",
+            "apenas eleitoral",
+            "sem valor jurídico",
+            "fundamental de um Estado"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "O continente com maior população é:",
+          "opcoes": [
+            "África",
+            "Europa",
+            "América",
+            "Ásia"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A unidade de medida de potência é:",
+          "opcoes": [
+            "joule",
+            "newton",
+            "pascal",
+            "watt"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A oração “porque choveu” normalmente expressa:",
+          "opcoes": [
+            "concessão",
+            "condição",
+            "finalidade",
+            "causa"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A Revolução Industrial começou na:",
+          "opcoes": [
+            "Rússia",
+            "Espanha",
+            "Grécia",
+            "Inglaterra"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Na fotossíntese, a clorofila capta principalmente:",
+          "opcoes": [
+            "energia sonora",
+            "nitrogênio atmosférico",
+            "calor geotérmico",
+            "energia luminosa"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "65d54e398fe77475165d8d03",
+      "titulo": "Desafio Médio de Cultura e Sociedade I",
+      "categoria": "Cultura e Sociedade",
+      "dificuldade": "media-dificil",
+      "codigo": "9963FS",
+      "perguntas": [
+        {
+          "pergunta": "Cultura é aprendida e compartilhada por meio de:",
+          "opcoes": [
+            "interações sociais",
+            "herança genética apenas",
+            "isolamento absoluto",
+            "fenômenos naturais"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Etnocentrismo ocorre quando alguém:",
+          "opcoes": [
+            "julga outra cultura pelos padrões da própria",
+            "valoriza a diversidade",
+            "abandona sua língua",
+            "estuda economia"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Cidadania envolve:",
+          "opcoes": [
+            "direitos e deveres na sociedade",
+            "apenas consumo",
+            "isolamento político",
+            "ausência de participação"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A mobilidade social representa:",
+          "opcoes": [
+            "mudança de posição na estrutura social",
+            "migração de animais",
+            "troca de moeda",
+            "variação climática"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Preconceito é uma atitude baseada em:",
+          "opcoes": [
+            "julgamento prévio",
+            "análise completa",
+            "evidência científica sempre",
+            "neutralidade absoluta"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Instituições sociais organizam:",
+          "opcoes": [
+            "práticas e relações coletivas",
+            "somente jogos",
+            "apenas fenômenos físicos",
+            "o clima"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A socialização primária ocorre principalmente:",
+          "opcoes": [
+            "na família e primeiros grupos",
+            "no mercado financeiro",
+            "em guerras",
+            "na vida adulta apenas"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Democracia participativa valoriza:",
+          "opcoes": [
+            "participação popular nas decisões",
+            "poder hereditário",
+            "censura total",
+            "ausência de eleições"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Desigualdade social refere-se à distribuição desigual de:",
+          "opcoes": [
+            "recursos e oportunidades",
+            "apenas opiniões",
+            "estações do ano",
+            "línguas naturais"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Patrimônio imaterial inclui:",
+          "opcoes": [
+            "saberes, festas e tradições",
+            "somente prédios",
+            "apenas esculturas",
+            "recursos minerais"
+          ],
+          "respostaCorreta": 0,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    },
+    {
+      "_id": "e6b1d904c6b603c4237b158f",
+      "titulo": "Desafio Médio de Cultura e Sociedade II",
+      "categoria": "Cultura e Sociedade",
+      "dificuldade": "media-dificil",
+      "codigo": "EHAZHR",
+      "perguntas": [
+        {
+          "pergunta": "Patrimônio imaterial inclui:",
+          "opcoes": [
+            "somente prédios",
+            "apenas esculturas",
+            "recursos minerais",
+            "saberes, festas e tradições"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Desigualdade social refere-se à distribuição desigual de:",
+          "opcoes": [
+            "apenas opiniões",
+            "estações do ano",
+            "línguas naturais",
+            "recursos e oportunidades"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Democracia participativa valoriza:",
+          "opcoes": [
+            "poder hereditário",
+            "censura total",
+            "ausência de eleições",
+            "participação popular nas decisões"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A socialização primária ocorre principalmente:",
+          "opcoes": [
+            "no mercado financeiro",
+            "em guerras",
+            "na vida adulta apenas",
+            "na família e primeiros grupos"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Instituições sociais organizam:",
+          "opcoes": [
+            "somente jogos",
+            "apenas fenômenos físicos",
+            "o clima",
+            "práticas e relações coletivas"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Preconceito é uma atitude baseada em:",
+          "opcoes": [
+            "análise completa",
+            "evidência científica sempre",
+            "neutralidade absoluta",
+            "julgamento prévio"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "A mobilidade social representa:",
+          "opcoes": [
+            "migração de animais",
+            "troca de moeda",
+            "variação climática",
+            "mudança de posição na estrutura social"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Cidadania envolve:",
+          "opcoes": [
+            "apenas consumo",
+            "isolamento político",
+            "ausência de participação",
+            "direitos e deveres na sociedade"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Etnocentrismo ocorre quando alguém:",
+          "opcoes": [
+            "valoriza a diversidade",
+            "abandona sua língua",
+            "estuda economia",
+            "julga outra cultura pelos padrões da própria"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        },
+        {
+          "pergunta": "Cultura é aprendida e compartilhada por meio de:",
+          "opcoes": [
+            "herança genética apenas",
+            "isolamento absoluto",
+            "fenômenos naturais",
+            "interações sociais"
+          ],
+          "respostaCorreta": 3,
+          "tempoSegundos": 40
+        }
+      ],
+      "tempoPorPergunta": 40,
+      "mostrarBotaoContinuar": true,
+      "exigirTelaCheia": true,
+      "materiais": [],
+      "fundoInicio": null,
+      "fundosQuiz": [],
+      "ativo": true,
+      "criador": "sistema"
+    }
+  ],
+  "acessos": [
+    {
+      "userId": "527557f04cdce1a6c744a532",
+      "data": "2026-09-07T21:24:24.908Z"
+    },
+    {
+      "userId": "527557f04cdce1a6c744a532",
+      "data": "2026-09-07T21:58:25.191Z"
+    },
+    {
+      "userId": "527557f04cdce1a6c744a532",
+      "data": "2026-09-09T01:39:14.290Z"
+    },
+    {
+      "userId": "527557f04cdce1a6c744a532",
+      "data": "2026-09-09T01:40:21.481Z"
+    },
+    {
+      "userId": "8b38841ce2cd91cb86a5d580",
+      "data": "2026-09-09T01:43:10.430Z"
+    },
+    {
+      "userId": "527557f04cdce1a6c744a532",
+      "data": "2026-09-09T23:04:46.619Z"
+    }
+  ],
+  "catalogoQuizzesAtualizado": "media-dificil-v6-40-segundos-perguntas-distintas"
+}

@@ -1,0 +1,5 @@
+@import url('../frontend/css/style.css');
+
+body > .container { max-width: 820px; }
+body > .container .box-codigo { padding: clamp(24px, 5vw, 48px); }
+.pergunta-titulo { margin-bottom: 24px; }

@@ -1,0 +1,49 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Quiz Platform: iniciar backend",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"index.js"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Quiz Platform: iniciar backend",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"index.js"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Quiz Platform: iniciar backend",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"index.js"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Quiz Platform: iniciar backend",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"index.js"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

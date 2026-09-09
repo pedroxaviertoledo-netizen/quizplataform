@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>QuizApp - Jogar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="quiz-start-screen">
+    <nav class="navbar">
+        <h2>Quiz Platform</h2>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Abandonar Quiz</a></li>
+            <li><a href="estudos.html">Estudos</a></li>
+            <li><button onclick="toggleDarkMode()" class="theme-toggle">Modo Escuro</button></li>
+        </ul>
+    </nav>
+<main class="quiz-page">
+        <div id="quizStart" class="card quiz-start">
+            <p class="eyebrow">PRONTO PARA COMEÇAR?</p>
+            <h1 id="quizStartTitle">Seu quiz está preparado</h1>
+            <p>Você terá alguns segundos para se concentrar antes da primeira pergunta.</p>
+            <div id="materiaisQuizInicio" class="quiz-materials" hidden></div>
+            <label class="fullscreen-choice" for="usarTelaCheia">
+                <input type="checkbox" id="usarTelaCheia" checked>
+                <span id="fullscreenChoiceText">Jogar em tela cheia</span>
+            </label>
+            <p id="fullscreenStatus" class="fullscreen-status" role="status"></p>
+            <button id="startQuiz" class="btn-accent" type="button">Iniciar quiz</button>
+        </div>
+        <div id="countdownOverlay" class="countdown-overlay" hidden>
+            <p>Prepare-se</p>
+            <strong id="countdownNumber">3</strong>
+        </div>
+        <div id="gameContainer">
+            <div class="quiz-header">
+                <p id="quizCategory" class="quiz-category">Quiz</p>
+                <p id="quizProgress">Pergunta 1 de 10</p>
+                <div id="timerArea" class="quiz-timer" hidden>
+                    <div class="timer-header"><span>Tempo restante</span><strong id="timerText">00:00</strong></div>
+                    <div class="timer-wrapper"><div id="timerBar" class="timer-bar"></div></div>
+                </div>
+                <h1 id="perguntaAtual">Carregando pergunta...</h1>
+                <button id="listenQuestion" class="listen-question" type="button" aria-label="Ouvir pergunta">Ouvir pergunta</button>
+            </div>
+            <div id="materiaisQuiz" class="quiz-materials" hidden></div>
+            <div id="opcoesContainer" class="opcoes-container"></div>
+            <div class="quiz-navigation">
+                <button id="previousQuestion" class="btn-secondary" type="button" disabled>Anterior</button>
+                <button id="nextQuestion" class="btn-accent quiz-next" type="button" hidden>Continuar</button>
+            </div>
+        </div>
+        <div id="quizComplete" class="card quiz-complete" hidden>
+            <p class="eyebrow">RESULTADO</p>
+            <h1>Quiz concluído</h1>
+            <p id="quizScore"></p>
+            <a class="btn-accent" href="dashboard.html">Voltar aos quizzes</a>
+        </div>
+
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

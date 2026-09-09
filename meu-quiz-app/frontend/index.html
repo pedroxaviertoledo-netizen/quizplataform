@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Platform | Acesso</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+    <main class="auth-shell">
+        <section class="auth-intro">
+            <span class="brand-mark">QP</span>
+            <p class="eyebrow">QUIZ PLATFORM</p>
+            <h1>Aprender pode ser uma experiência marcante.</h1>
+            <p class="auth-description">Crie partidas, acompanhe seu desempenho e transforme conhecimento em desafio.</p>
+            <div class="auth-points">
+                <span>Partidas rápidas</span>
+                <span>Ranking em tempo real</span>
+                <span>Conteúdo personalizado</span>
+            </div>
+        </section>
+
+        <section class="auth-card" aria-labelledby="authTitle">
+            <div class="auth-card-header">
+                <div>
+                    <p class="eyebrow">BEM-VINDO</p>
+                    <h2 id="authTitle">Acesse sua conta</h2>
+                </div>
+                <button type="button" class="theme-toggle" onclick="toggleDarkMode()">Modo escuro</button>
+            </div>
+
+            <div class="auth-tabs" role="tablist" aria-label="Acesso à plataforma">
+                <button type="button" class="auth-tab is-active" data-form="loginForm">Entrar</button>
+                <button type="button" class="auth-tab" data-form="registerForm">Criar conta</button>
+            </div>
+
+            <p id="authMessage" class="auth-message" role="status" aria-live="polite"></p>
+
+            <form id="loginForm" class="auth-form">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" placeholder="voce@exemplo.com" autocomplete="email" required>
+                <label for="senha">Senha</label>
+                <div class="password-field">
+                    <input id="senha" name="senha" type="password" placeholder="Digite sua senha" autocomplete="current-password" required minlength="6">
+                    <button type="button" class="password-toggle" data-password-target="senha" aria-label="Mostrar senha"><span class="eye-icon" aria-hidden="true"></span><span class="password-toggle-label">Mostrar</span></button>
+                </div>
+                <button class="btn-accent auth-submit" type="submit">Entrar na plataforma</button>
+            </form>
+
+            <form id="registerForm" class="auth-form" hidden>
+                <label for="regNome">Nome completo</label>
+                <input id="regNome" name="nome" type="text" placeholder="Como podemos chamar você?" autocomplete="name" required>
+                <label for="regEmail">E-mail</label>
+                <input id="regEmail" name="email" type="email" placeholder="voce@exemplo.com" autocomplete="email" required>
+                <label for="regSenha">Senha</label>
+                <div class="password-field">
+                    <input id="regSenha" name="senha" type="password" placeholder="Mínimo de 6 caracteres" autocomplete="new-password" required minlength="6">
+                    <button type="button" class="password-toggle" data-password-target="regSenha" aria-label="Mostrar senha"><span class="eye-icon" aria-hidden="true"></span><span class="password-toggle-label">Mostrar</span></button>
+                </div>
+                <label for="regRole">Você é</label>
+                <select id="regRole" name="role">
+                    <option value="estudante">Estudante</option>
+                    <option value="professor">Professor</option>
+                    <option value="desenvolvedor">Desenvolvedor</option>
+                </select>
+                <div id="developerPinField" class="developer-pin-field" style="display: none;">
+                    <label for="developerPin">PIN de desenvolvedor</label>
+                    <input id="developerPin" type="text" inputmode="text" autocomplete="off" maxlength="6" pattern="[A-Za-z0-9]{6}" placeholder="6 letras e números" disabled>
+                    <small>O PIN deve ter exatamente 6 caracteres alfanuméricos.</small>
+                </div>
+                <button class="btn-accent auth-submit" type="submit">Criar minha conta</button>
+            </form>
+
+            <p class="auth-footer">Ao continuar, você concorda com os <a class="terms-link" href="termos.html">termos de uso da plataforma</a>.</p>
+        </section>
+    </main>
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

@@ -10,6 +10,8 @@
     </script>
 </head>
 <body>
+   // Bloqueia alunos automaticamente ao carregar a página
+verificarAcessoProtegido(true); 
     <p>Redirecionando para a plataforma...</p>
       <!-- 1. Importa a biblioteca do Supabase direto da nuvem -->
   <script src="https://jsdelivr.net"></script>
@@ -24,6 +26,15 @@
 
     // Teste rápido para ver no console se funcionou
     console.log("Supabase conectado com sucesso!", supabase)
+    // Dentro da tag <script> do seu arquivo HTML:
+document.getElementById('meuFormularioLogin').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = document.getElementById('campoEmail').value;
+    const senha = document.getElementById('campoSenha').value;
+    
+    // Chama a função do auth.js
+    realizarLogin(email, senha);
+});
   </script>
 </body>
 </html>

@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Platform | Acesso</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="auth-page">
+    <script src="https://jsdelivr.net"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const url = 'https://supabase.co';
+            const anon = 'sb_publishable__dqFtO5TMNDKjAiMOJYIMA_P__sHyqQ';
+            // Inicializa o cliente na variável global 'supabase' que o seu auth.js espera
+            if (window.supabase && typeof window.supabase.createClient === 'function') {
+                window.supabase = window.supabase.createClient(url, anon);
+                console.log("Cliente Supabase inicializado e pronto para autenticação!");
+            }
+        });
+    </script>
     <main class="auth-shell">
         <section class="auth-intro">
             <span class="brand-mark">QP</span>

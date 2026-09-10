@@ -1,110 +1,65 @@
-if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark-mode');
-}
-
-function initAuth() {
-    const loginForm = document.getElementById('loginForm');
-    const registerForm = document.getElementById('registerForm');
-    const authMessage = document.getElementById('authMessage');
-    const tabs = document.querySelectorAll('.auth-tab');
-    const passwordToggles = document.querySelectorAll('.password-toggle');
-    const roleSelect = document.getElementById('regRole');
-    const developerPinField = document.getElementById('developerPinField');
-    const developerPinInput = document.getElementById('developerPin');
-
-    const syncDeveloperPinField = () => {
-        if (!developerPinField || !developerPinInput || !roleSelect) return;
-        const isDeveloper = roleSelect.value === 'desenvolvedor';
-
-        developerPinField.style.display = isDeveloper ? 'grid' : 'none';
-        developerPinField.hidden = !isDeveloper;
-        developerPinInput.style.display = isDeveloper ? 'block' : 'none';
-        developerPinInput.hidden = !isDeveloper;
-        developerPinInput.disabled = !isDeveloper;
-        developerPinInput.required = isDeveloper;
-
-        if (!isDeveloper) {
-            developerPinInput.value = '';
-        }
-    };
-
-    const showMessage = (message, type = 'error') => {
-        if (!authMessage) return;
-        authMessage.textContent = message;
-        authMessage.className = `auth-message ${type}`;
-    };
-
-    tabs.forEach((tab) => {
-        tab.addEventListener('click', () => {
-            const isLogin = tab.dataset.form === 'loginForm';
-            tabs.forEach((item) => item.classList.toggle('is-active', item === tab));
-            loginForm.hidden = !isLogin;
-            registerForm.hidden = isLogin;
-            if (registerForm && !isLogin) {
-                syncDeveloperPinField();
-            }
-            showMessage('');
-        });
-    });
-
-    passwordToggles.forEach((toggle) => {
-        toggle.addEventListener('click', () => {
-            const input = document.getElementById(toggle.dataset.passwordTarget);
-            const isVisible = input.type === 'text';
-            input.type = isVisible ? 'password' : 'text';
-            toggle.querySelector('.password-toggle-label').textContent = isVisible ? 'Mostrar' : 'Ocultar';
-            toggle.setAttribute('aria-label', isVisible ? 'Mostrar senha' : 'Ocultar senha');
-        });
-    });
-
-    roleSelect?.addEventListener('change', syncDeveloperPinField);
-    syncDeveloperPinField();
-
+document.addEventListener('DOMContentLoaded', () => {
+    const loginForm = document.querySelector('form') || document.getElementById('loginForm');
     if (loginForm) {
         loginForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const email = document.getElementById('email').value;
-            const senha = document.getElementById('senha').value;
+            e.preventDefault(); // Impede o '?' com dados confidenciais na URL
+            
+            const emailInput = document.getElementById('email') || document.querySelector('input[type="email"]');
+            const passwordInput = document.getElementById('senha') || document.getElementById('password') || document.querySelector('input[type="password"]');
+            
+            if (!emailInput || !passwordInput) return;
 
-            try {
-                const res = await apiRequest('/auth/login', 'POST', { email, senha });
-                localStorage.setItem('token', res.token);
-                localStorage.setItem('user', JSON.stringify(res.user));
-                window.location.href = 'dashboard.html';
-            } catch (err) {
-                showMessage(err.message);
+            // Usa o cliente Supabase global já criado no seu HTML original
+            const client = window.supabase;
+
+            if (client) {
+                try {
+                    const { data, error } = await client.auth.signInWithPassword({
+                        email: emailInput.value,
+                        password: passwordInput.value
+                    });
+
+                    if (error) throw error;
+                    alert('Bem-vindo(a) de volta à Quiz Platform!');
+                    window.location.href = 'dashboard.html';
+                } catch (error) {
+                    console.error('Erro de Login:', error.message);
+                    alert('Erro de autenticação: ' + error.message);
+                }
+            } else {
+                console.error("Aguardando inicialização do cliente Supabase...");
             }
         });
     }
+});
 
-    if (registerForm) {
-        registerForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const nome = document.getElementById('regNome').value;
-            const email = document.getElementById('regEmail').value;
-            const senha = document.getElementById('regSenha').value;
-            const role = document.getElementById('regRole').value;
-            const developerPin = document.getElementById('developerPin')?.value.trim().toUpperCase();
+// Interceptador para processar o formulário de login integrado ao Supabase global
+document.addEventListener('DOMContentLoaded', () => {
+    const loginForm = document.querySelector('form') || document.getElementById('loginForm');
+    if (loginForm) {
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault(); // Impede o envio dos dados pela URL (?email=...)
+            
+            const emailInput = document.querySelector('input[type="email"]');
+            const passwordInput = document.querySelector('input[type="password"]');
+            
+            if (!emailInput || !passwordInput) return;
 
-            try {
-                await apiRequest('/auth/register', 'POST', { nome, email, senha, role, developerPin });
-                registerForm.reset();
-                document.querySelector('[data-form="loginForm"]')?.click();
-                showMessage('Conta cadastrada com sucesso. Agora entre com seus dados.', 'success');
-            } catch (err) {
-                showMessage(err.message);
+            if (window.supabase) {
+                try {
+                    const { data, error } = await window.supabase.auth.signInWithPassword({
+                        email: emailInput.value,
+                        password: passwordInput.value
+                    });
+
+                    if (error) throw error;
+                    alert('Bem-vindo(a) de volta à Quiz Platform!');
+                    window.location.href = 'dashboard.html';
+                } catch (error) {
+                    console.error('Erro de Login:', error.message);
+                    alert('Erro de autenticação: ' + error.message);
+                }
             }
         });
     }
-}
-
-function toggleDarkMode() {
-    const darkMode = document.body.classList.toggle('dark-mode');
-    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
-}
-
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initAuth);
-} else {
-    initAuth();
-}
+});

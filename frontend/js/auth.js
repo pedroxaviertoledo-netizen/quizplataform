@@ -32,3 +32,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Interceptador para processar o formulário de login integrado ao Supabase global
+document.addEventListener('DOMContentLoaded', () => {
+    const loginForm = document.querySelector('form') || document.getElementById('loginForm');
+    if (loginForm) {
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault(); // Impede o envio dos dados pela URL (?email=...)
+            
+            const emailInput = document.querySelector('input[type="email"]');
+            const passwordInput = document.querySelector('input[type="password"]');
+            
+            if (!emailInput || !passwordInput) return;
+
+            if (window.supabase) {
+                try {
+                    const { data, error } = await window.supabase.auth.signInWithPassword({
+                        email: emailInput.value,
+                        password: passwordInput.value
+                    });
+
+                    if (error) throw error;
+                    alert('Bem-vindo(a) de volta à Quiz Platform!');
+                    window.location.href = 'dashboard.html';
+                } catch (error) {
+                    console.error('Erro de Login:', error.message);
+                    alert('Erro de autenticação: ' + error.message);
+                }
+            }
+        });
+    }
+});

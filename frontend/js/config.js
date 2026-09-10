@@ -2,7 +2,7 @@ window.toggleDarkMode = function() {
     document.body.classList.toggle('dark-mode');
     const isDark = document.body.classList.contains('dark-mode');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    console.log("Modo escuro acionado no seu layout original!");
+    console.log("Modo escuro acionado com sucesso!");
 };
 
 document.addEventListener('DOMContentLoaded', () => {

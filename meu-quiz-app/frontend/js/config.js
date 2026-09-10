@@ -1,2 +1,12 @@
-// O frontend e a API são publicados pelo mesmo servidor.
-window.QUIZ_API_URL = window.location.origin;
+window.toggleDarkMode = function() {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    console.log("Modo escuro acionado com sucesso!");
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+    }
+});

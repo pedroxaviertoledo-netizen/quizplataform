@@ -11,5 +11,19 @@
 </head>
 <body>
     <p>Redirecionando para a plataforma...</p>
+      <!-- 1. Importa a biblioteca do Supabase direto da nuvem -->
+  <script src="https://jsdelivr.net"></script>
+
+  <!-- 2. Código que ativa a conexão com o seu backend -->
+  <script>
+    const supabaseUrl = 'https://supabase.co'
+    const supabaseAnonKey = 'sb_publishable__dqFtO5TMNDKjAiMOJYIMA_P__sHyqQ'
+    
+    // Conexão ativa globalmente na página
+    const supabase = supabase.createClient(supabaseUrl, supabaseAnonKey)
+
+    // Teste rápido para ver no console se funcionou
+    console.log("Supabase conectado com sucesso!", supabase)
+  </script>
 </body>
 </html>

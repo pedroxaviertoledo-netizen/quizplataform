@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>QuizApp - Criar Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>Quiz Platform</h2>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Voltar ao Dashboard</a></li>
+            <li><a href="estudos.html">Estudos</a></li>
+            <li><button onclick="toggleDarkMode()" class="theme-toggle">Modo Escuro</button></li>
+        </ul>
+    </nav>
+   <main style="padding: 2rem; max-width: 600px; margin: 0 auto;">
+        <div class="card">
+            <h2>Criar Novo Quiz</h2>
+            
+            <div id="quizMeta" style="display: flex; flex-direction: column; gap: 1rem;">
+                <input type="text" id="tituloQuiz" placeholder="Titulo do Quiz" required>
+                <input type="text" id="categoriaQuiz" placeholder="Categoria (ex: Historia, Tecnologia)" required>
+                <label class="timed-quiz-option" for="usarTempoQuiz">
+                    <input type="checkbox" id="usarTempoQuiz">
+                    <span>Definir tempo para as perguntas</span>
+                </label>
+                <label for="tempoQuiz">Tempo para cada pergunta (segundos)</label>
+                <input type="number" id="tempoQuiz" min="5" max="600" placeholder="Ex.: 40" disabled>
+                <label class="timed-quiz-option" for="mostrarBotaoContinuar">
+                    <input type="checkbox" id="mostrarBotaoContinuar" checked>
+                    <span>Aguardar resposta antes de liberar a próxima pergunta</span>
+                </label>
+                <label class="timed-quiz-option" for="exigirTelaCheia">
+                    <input type="checkbox" id="exigirTelaCheia">
+                    <span>Exigir tela cheia para responder este quiz</span>
+                </label>
+            </div>
+
+            <section class="creation-section">
+                <h3>Materiais de apoio</h3>
+                <p>Adicione arquivos, links ou imagens para os alunos consultarem no quiz.</p>
+                <div class="material-add-row">
+                    <input type="url" id="materialLink" placeholder="https://exemplo.com/material">
+                    <button type="button" id="addMaterialLink" class="btn-secondary">Adicionar link</button>
+                </div>
+                <label class="file-picker" for="materialFiles">
+                    <span class="file-picker-icon" aria-hidden="true">↑</span>
+                    <span><strong>Escolher arquivos</strong><small>PDF, imagens ou outros materiais</small></span>
+                    <input type="file" id="materialFiles" multiple>
+                </label>
+                <p id="materialFilesStatus" class="file-picker-status">Nenhum arquivo selecionado</p>
+                <div id="materiaisVisuais" class="materials-list"></div>
+            </section>
+
+            <section class="creation-section">
+                <h3>Imagens de fundo</h3>
+                <p>Escolha uma imagem para a abertura e uma ou várias para a área das perguntas.</p>
+                <label for="fundoInicioPreset">Imagem da tela de início</label>
+                <select id="fundoInicioPreset">
+                    <option value="">Sem imagem de fundo</option>
+                    <option value="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80">Tecnologia</option>
+                    <option value="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=1600&q=80">Biblioteca</option>
+                    <option value="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80">Paisagem</option>
+                </select>
+                <label for="fundosQuizFiles">Imagens para a área das perguntas</label>
+                <label class="file-picker" for="fundosQuizFiles">
+                    <span class="file-picker-icon" aria-hidden="true">↑</span>
+                    <span><strong>Escolher imagens</strong><small>Você pode selecionar várias imagens</small></span>
+                    <input type="file" id="fundosQuizFiles" accept="image/*" multiple>
+                </label>
+                <p id="fundosFilesStatus" class="file-picker-status">Nenhuma imagem selecionada</p>
+                <div class="material-add-row">
+                    <input type="url" id="fundoQuizLink" placeholder="URL de uma imagem de fundo">
+                    <button type="button" id="addFundoQuizLink" class="btn-secondary">Adicionar imagem</button>
+                </div>
+                <div id="fundosVisuais" class="materials-list"></div>
+            </section>
+            
+            <hr>
+            
+            <div id="areaPerguntas" style="display: flex; flex-direction: column; gap: 1rem;">
+                <h3>Perguntas Adicionadas: <span id="contadorPerguntas" style="color: var(--primary-wine);">0</span></h3>
+                
+                <!-- Lista visual onde as perguntas aparecerão -->
+                <div id="listaPerguntasVisuais"></div>
+
+                <div style="background: var(--input-bg); padding: 1.5rem; border-radius: var(--radius-md); border: 2px dashed var(--border-color); display: flex; flex-direction: column; gap: 1rem;">
+                    <h4 style="margin: 0; color: var(--text-muted);">Nova Pergunta</h4>
+                    <input type="text" id="textoPergunta" placeholder="Qual a pergunta?">
+                    <input type="text" id="opcao0" placeholder="Opcao A">
+                    <input type="text" id="opcao1" placeholder="Opcao B">
+                    <input type="text" id="opcao2" placeholder="Opcao C">
+                    <input type="text" id="opcao3" placeholder="Opcao D">
+                    
+                    <select id="respostaCorreta">
+                        <option value="">Selecione a resposta correta</option>
+                        <option value="0">Opcao A</option>
+                        <option value="1">Opcao B</option>
+                        <option value="2">Opcao C</option>
+                        <option value="3">Opcao D</option>
+                    </select>
+
+                    <button type="button" id="btnAdicionarPergunta" class="btn-accent" style="width: 100%;">+ Adicionar à Lista</button>
+                </div>
+            </div>
+
+            <hr>
+            
+            <button type="button" id="btnSalvarQuiz" class="btn-wine" style="width: 100%; font-size: 1.1rem; padding: 1rem;">Finalizar e Gerar Código</button>
+            
+            <div id="resultadoCriacao" style="display: none; margin-top: 20px; text-align: center;">
+                <h3 style="color: var(--primary-wine);">Quiz Criado com Sucesso!</h3>
+                <p class="quiz-created-summary"><span id="tempoGerado"></span></p>
+                <p>Compartilhe este código com seus amigos:</p>
+                <div class="code-badge">
+                    <strong id="codigoGerado" style="font-size: 2rem; letter-spacing: 5px; color: var(--text-color);"></strong>
+                </div>
+                <a id="voltarCriacao" href="dashboard.html" class="btn-wine" style="text-decoration: none; margin-top: 15px; display: inline-block;">Voltar ao Dashboard</a>
+            </div>
+        </div>
+    </main>
+    
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

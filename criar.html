@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>QuizApp - Criar Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>Quiz Platform</h2>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Voltar ao Dashboard</a></li>
+            <li><a href="estudos.html">Estudos</a></li>
+            <li><button onclick="toggleDarkMode()" class="theme-toggle">Modo Escuro</button></li>
+        </ul>
+    </nav>
+   <main style="padding: 2rem; max-width: 600px; margin: 0 auto;">
+        <div class="card">
+            <h2>Criar Novo Quiz</h2>
+            <div id="quizMeta" style="display: flex; flex-direction: column; gap: 1rem;">
+                <input type="text" id="tituloQuiz" placeholder="Titulo do Quiz" required>
+                <input type="text" id="categoriaQuiz" placeholder="Categoria (ex: Historia, Tecnologia)" required>
+            </div>
+            <script src="js/config.js"></script>
+            <script src="js/api.js"></script>
+            <script src="js/app.js"></script>
+        </div>
+    </main>
+</body>
+</html>

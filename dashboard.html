@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>QuizApp - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>Quiz Platform</h2>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Descobrir</a></li>
+            <li><a href="perfil.html">Meu Perfil</a></li>
+            <li><a href="estudos.html">Estudos</a></li>
+            <li><a href="atividades.html">Atividades</a></li>
+            <li><a href="notificacoes.html">Notificações</a></li>
+            <li><a href="ao-vivo.html">Quiz ao vivo</a></li>
+            <li><button onclick="toggleDarkMode()" class="theme-toggle">Modo Escuro</button></li>
+            <li><button onclick="logout()" class="btn-wine" style="padding: 4px 10px;">Sair</button></li>
+        </ul>
+    </nav>
+<main style="padding: 2rem; max-width: 1200px; margin: 0 auto;">
+        <section class="hero">
+            <h1>Pronto para jogar?</h1>
+            <p style="margin-bottom: 20px; font-size: 1.1rem; opacity: 0.9;">Insira um código de jogo para participar agora mesmo</p>
+            <div class="hero-search">
+                <input type="text" id="codigoBusca" placeholder="Ex: X9A4B2" autocomplete="off" maxlength="6">
+                <button onclick="buscarQuizPorCodigo()" class="btn-accent" style="border-radius: 12px;">Entrar</button>
+            </div>
+        </section>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+            <h2>Descobrir Quizzes</h2>
+            <a href="criar.html" class="btn-wine" style="text-decoration: none;">+ Criar Novo</a>
+        </div>
+        <div id="quizList">
+        </div>
+    </main>
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

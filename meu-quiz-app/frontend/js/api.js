@@ -1,10 +1,16 @@
-const API_URL = `${(window.QUIZ_API_URL || window.location.origin).replace(/\/$/, '')}/api`;
+const API_URL = window.QUIZ_API_URL
+    ? `${window.QUIZ_API_URL.replace(/\/$/, '')}/api`
+    : null;
 
 /**
  * Função central para realizar requisições à API.
  * Gerencia tokens de autenticação e trata erros comuns.
  */
 async function apiRequest(endpoint, method = 'GET', body = null) {
+    if (!API_URL) {
+        throw new Error('A API de quizzes ainda não foi configurada.');
+    }
+
     const token = localStorage.getItem('token');
     
     const headers = { 

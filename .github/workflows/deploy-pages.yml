@@ -1,4 +1,4 @@
-name: Publicar interface no GitHub Pages
+name: Publicar frontend Supabase no GitHub Pages
 
 on:
   push:

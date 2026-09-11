@@ -99,8 +99,12 @@ document.addEventListener('DOMContentLoaded', () => {
             registerForm.reset();
             showMessage('Conta criada. Confirme seu e-mail para entrar.', 'success');
         } catch (error) {
-            showMessage(error.message || 'Não foi possível criar a conta.');
+                const mensagem = error.message?.toLowerCase().includes('rate limit')
+                    ? 'O limite de e-mails do Supabase foi atingido. Aguarde alguns minutos antes de tentar novamente ou use outro e-mail.'
+                    : (error.message || 'Não foi possível criar a conta.');
+                showMessage(mensagem);
         } finally {
             button.disabled = false;
         }
     });
+});

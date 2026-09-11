@@ -1,54 +1,99 @@
-const API_URL = window.QUIZ_API_URL
-    ? `${window.QUIZ_API_URL.replace(/\/$/, '')}/api`
-    : null;
+let SUPABASE = window.supabaseClient;
 
-/**
- * Função central para realizar requisições à API.
- * Gerencia tokens de autenticação e trata erros comuns.
- */
-async function apiRequest(endpoint, method = 'GET', body = null) {
-    if (!API_URL) {
-        throw new Error('A API de quizzes ainda não foi configurada. Configure uma URL de backend em window.QUIZ_API_URL.');
-    }
+async function obterUsuarioSupabase() {
+    return SUPABASE?.auth?.getUser();
+}
 
-    const token = localStorage.getItem('token');
-    
-    const headers = { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
+function converterQuiz(quiz, ocultarRespostas = false) {
+    const perguntas = (quiz.perguntas || []).map((pergunta) => {
+        if (!ocultarRespostas) return pergunta;
+        const { respostaCorreta, ...semResposta } = pergunta;
+        return semResposta;
+    });
+    return {
+        ...quiz,
+        _id: quiz.id,
+        criador: quiz.criador,
+        tempoPorPergunta: quiz.tempo_por_pergunta,
+        mostrarBotaoContinuar: quiz.mostrar_botao_continuar,
+        exigirTelaCheia: quiz.exigir_tela_cheia,
+        fundoInicio: quiz.fundo_inicio,
+        fundosQuiz: quiz.fundos_quiz,
+        perguntas
     };
-    
-    // Injeta o token de segurança se o usuário estiver logado
-    if (token) {
-        headers['Authorization'] = `Bearer ${token}`;
+}
+
+async function apiRequest(endpoint, method = 'GET', body = null) {
+    if (!SUPABASE && window.supabaseReady) {
+        SUPABASE = await window.supabaseReady;
+    }
+    if (!SUPABASE) {
+        throw new Error('O cliente Supabase não foi carregado. Recarregue a página.');
     }
 
-    const config = { method, headers };
-    if (body) {
-        config.body = JSON.stringify(body);
+    const partes = endpoint.split('?')[0].split('/').filter(Boolean);
+    if (partes[0] !== 'quizzes') {
+        throw new Error(`A função ${endpoint} ainda não foi migrada para o Supabase.`);
     }
 
-    try {
-        const response = await fetch(`${API_URL}${endpoint}`, config);
-        const data = await response.json().catch(() => ({}));
-
-        // Se o token expirou ou for inválido, desloga o usuário por segurança
-        if (response.status === 401 || response.status === 403) {
-            localStorage.clear();
-            window.location.href = 'index.html';
-            throw new Error('Sessão expirada. Faça login novamente.');
-        }
-
-        if (!response.ok) {
-            throw new Error(data.erro || 'Erro desconhecido na requisição');
-        }
-
-        return data;
-    } catch (err) {
-        if (err instanceof TypeError && err.message.includes('fetch')) {
-            throw new Error('Não foi possível conectar ao servidor. Verifique se o backend está ativo.');
-        }
-        console.error(`Erro na API (${endpoint}):`, err);
-        throw err; // Repassa o erro para ser tratado na tela
+    if (partes.length === 1 && method === 'GET') {
+        const { data, error } = await SUPABASE
+            .from('quizzes')
+            .select('*')
+            .eq('ativo', true)
+            .order('created_at', { ascending: false });
+        if (error) throw error;
+        return data.map((quiz) => converterQuiz(quiz, true));
     }
+
+    if (partes[1] === 'criar' && method === 'POST') {
+        const { data: sessao, error: erroSessao } = await obterUsuarioSupabase();
+        if (erroSessao || !sessao?.user) throw new Error('Sessão expirada. Faça login novamente.');
+        const codigo = Math.random().toString(36).slice(2, 8).toUpperCase();
+        const registro = {
+            titulo: body.titulo,
+            categoria: body.categoria,
+            codigo,
+            criador: sessao.user.id,
+            perguntas: (body.perguntas || []).map((pergunta) => ({ ...pergunta, tempoSegundos: body.tempoPorPergunta ?? null })),
+            tempo_por_pergunta: body.tempoPorPergunta ?? null,
+            mostrar_botao_continuar: body.mostrarBotaoContinuar !== false,
+            exigir_tela_cheia: body.exigirTelaCheia === true,
+            materiais: body.materiais || [],
+            fundo_inicio: body.fundoInicio || null,
+            fundos_quiz: body.fundosQuiz || []
+        };
+        const { data, error } = await SUPABASE.from('quizzes').insert(registro).select().single();
+        if (error) throw error;
+        return { mensagem: 'Quiz criado com sucesso!', quiz: converterQuiz(data), codigo };
+    }
+
+    if (partes[1] === 'codigo' && method === 'GET') {
+        const { data, error } = await SUPABASE
+            .from('quizzes')
+            .select('*')
+            .eq('codigo', partes[2].toUpperCase())
+            .eq('ativo', true)
+            .single();
+        if (error) throw new Error('Quiz não encontrado com este código.');
+        return converterQuiz(data);
+    }
+
+    if (partes.length === 2 && method === 'GET') {
+        const { data, error } = await SUPABASE.from('quizzes').select('*').eq('id', partes[1]).eq('ativo', true).single();
+        if (error) throw new Error('Quiz não encontrado.');
+        return converterQuiz(data);
+    }
+
+    if (partes.length === 2 && method === 'DELETE') {
+        const { error } = await SUPABASE.from('quizzes').update({ ativo: false }).eq('id', partes[1]);
+        if (error) throw error;
+        return { ok: true };
+    }
+
+    if (partes[2] === 'resultado') {
+        throw new Error('Resultados ainda não foram migrados para o Supabase.');
+    }
+
+    throw new Error(`A função ${endpoint} ainda não foi migrada para o Supabase.`);
 }

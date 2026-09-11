@@ -3,14 +3,28 @@ window.SUPABASE_CONFIG = window.SUPABASE_CONFIG || {
     anonKey: 'sb_publishable__dqFtO5TMNDKjAiMOJYIMA_P__sHyqQ'
 };
 
-window.supabaseClient = null;
-
-if (window.supabase?.createClient) {
-    const { url, anonKey } = window.SUPABASE_CONFIG;
-    if (url && anonKey) {
+window.supabaseReady = window.supabaseReady || new Promise((resolve, reject) => {
+    const inicializar = () => {
+        const { url, anonKey } = window.SUPABASE_CONFIG;
+        if (!window.supabase?.createClient || !url || !anonKey) {
+            reject(new Error('Configuração do Supabase incompleta.'));
+            return;
+        }
         window.supabaseClient = window.supabase.createClient(url, anonKey);
+        resolve(window.supabaseClient);
+    };
+
+    if (window.supabase?.createClient) {
+        inicializar();
+        return;
     }
-}
+
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';
+    script.onload = inicializar;
+    script.onerror = () => reject(new Error('Não foi possível carregar o SDK do Supabase.'));
+    document.head.appendChild(script);
+});
 
 window.toggleDarkMode = function() {
     document.body.classList.toggle('dark-mode');

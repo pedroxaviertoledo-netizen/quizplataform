@@ -35,4 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('theme') === 'dark') {
         document.body.classList.add('dark-mode');
     }
+    document.querySelectorAll('.theme-toggle').forEach((botao) => {
+        botao.textContent = document.body.classList.contains('dark-mode') ? '☀' : '☾';
+        botao.title = 'Alternar tema';
+        botao.setAttribute('aria-label', 'Alternar tema claro e escuro');
+    });
 });

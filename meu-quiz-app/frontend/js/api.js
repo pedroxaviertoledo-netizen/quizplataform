@@ -48,7 +48,14 @@ async function apiRequest(endpoint, method = 'GET', body = null) {
         const usuario = await exigirUsuario();
         const { data, error } = await SUPABASE.from('atividades').select('*').eq('remetente_id', usuario.id).eq('status', 'concluida').order('concluida_em', { ascending: false });
         if (error) throw error;
-        return (data || []).map((atividade) => ({ ...converterAtividade(atividade), aluno: atividade.destinatario_id, alunoEmail: '', resultado: atividade.resultado || {} }));
+        const ids = [...new Set((data || []).map((atividade) => atividade.destinatario_id))];
+        const { data: perfis, error: erroPerfis } = ids.length ? await SUPABASE.from('profiles').select('id,email,nome').in('id', ids) : { data: [], error: null };
+        if (erroPerfis) throw erroPerfis;
+        const perfisPorId = new Map((perfis || []).map((perfil) => [perfil.id, perfil]));
+        return (data || []).map((atividade) => {
+            const perfil = perfisPorId.get(atividade.destinatario_id);
+            return { ...converterAtividade(atividade), aluno: perfil?.nome || 'Aluno', alunoEmail: perfil?.email || '', resultado: atividade.resultado || {} };
+        });
     }
     if (partes[0] === 'quizzes' && partes[1] === 'pontos' && method === 'POST') return { ok: true };
     if (partes[0] !== 'quizzes') throw new Error(`A função ${endpoint} ainda não foi migrada para o Supabase.`);

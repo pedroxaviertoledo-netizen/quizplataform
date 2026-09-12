@@ -726,6 +726,9 @@ function configurarCabecalho() {
         link.innerHTML = `<span>${nome.slice(0, 2).toUpperCase()}</span>`;
         link.title = 'Meu perfil';
         link.setAttribute('aria-label', 'Meu perfil');
+        const itemPerfil = link.closest('li');
+        const itemTema = document.querySelector('.theme-toggle')?.closest('li');
+        if (itemPerfil && itemTema) itemTema.parentElement.insertBefore(itemPerfil, itemTema);
     });
 }
 

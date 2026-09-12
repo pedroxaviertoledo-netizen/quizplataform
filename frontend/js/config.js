@@ -30,6 +30,7 @@ window.toggleDarkMode = function() {
     document.body.classList.toggle('dark-mode');
     const isDark = document.body.classList.contains('dark-mode');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    if (typeof configurarCabecalho === 'function') configurarCabecalho();
     console.log("Modo escuro acionado com sucesso!");
 };
 

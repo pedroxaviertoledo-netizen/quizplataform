@@ -162,7 +162,7 @@ async function carregarQuizzes() {
         const renderizarQuizzes = (categoria = '') => {
             const filtrados = categoria ? quizzes.filter((quiz) => normalizarCategoria(quiz.categoria) === normalizarCategoria(categoria)) : quizzes;
             lista.innerHTML = filtrados.length ? filtrados.map((quiz) => `
-            <article class="quiz-card">
+            <article class="quiz-card" data-quiz-category="${quiz.categoria || ''}">
                 <p class="quiz-category">${quiz.categoria}</p>
                 <h3>${quiz.titulo}</h3>
                 <p>${quiz.perguntas.length} perguntas para responder.</p>
@@ -175,13 +175,6 @@ async function carregarQuizzes() {
             lista.querySelectorAll('[data-quiz-delete]').forEach((botao) => botao.addEventListener('click', () => apagarQuiz(botao.dataset.quizDelete)));
         };
         renderizarQuizzes();
-        document.querySelectorAll('[data-category]').forEach((botao) => botao.addEventListener('click', () => {
-            document.querySelectorAll('[data-category]').forEach((item) => item.classList.remove('is-active'));
-            botao.classList.add('is-active');
-            renderizarQuizzes(botao.dataset.category);
-            document.getElementById('quizList').scrollIntoView({ behavior: 'smooth', block: 'start' });
-            tocarSom('categoria');
-        }));
         document.querySelectorAll('.subject-card').forEach((botao) => botao.addEventListener('mouseenter', () => tocarSom('hover'), { once: true }));
     } catch (erro) {
         lista.innerHTML = `<p class="auth-message error">${erro.message}</p>`;
@@ -712,11 +705,28 @@ if (document.readyState === 'loading') {
 
 configurarNavegacaoPorPerfil();
 configurarFeedback();
+configurarCabecalho();
 
 document.getElementById('nextQuestion')?.addEventListener('click', avancarQuiz);
 document.getElementById('previousQuestion')?.addEventListener('click', voltarPergunta);
 document.getElementById('startQuiz')?.addEventListener('click', iniciarContagemQuiz);
 document.getElementById('listenQuestion')?.addEventListener('click', ouvirPerguntaAtual);
+
+function configurarCabecalho() {
+    document.querySelectorAll('.theme-toggle').forEach((botao) => {
+        botao.textContent = document.body.classList.contains('dark-mode') ? '☀' : '☾';
+        botao.title = 'Alternar tema';
+        botao.setAttribute('aria-label', 'Alternar tema claro e escuro');
+    });
+    document.querySelectorAll('a[href="perfil.html"]').forEach((link) => {
+        const usuario = JSON.parse(localStorage.getItem('user') || '{}');
+        const nome = usuario.nome || usuario.email || 'Perfil';
+        link.classList.add('profile-nav-avatar', `avatar-${usuario.avatar || 'aurora'}`);
+        link.innerHTML = `<span>${nome.slice(0, 2).toUpperCase()}</span>`;
+        link.title = 'Meu perfil';
+        link.setAttribute('aria-label', 'Meu perfil');
+    });
+}
 
 // Inicializa o Áudio do Navegador no primeiro clique
 function initAudio() {
@@ -954,4 +964,13 @@ async function buscarQuizPorCodigo() {
     } catch (err) {
         alert(err.message);
     }
+}
+
+function filtrarMateria(categoria) {
+    const normalizar = (valor) => String(valor || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const categoriaNormalizada = normalizar(categoria);
+    document.querySelectorAll('[data-category]').forEach((item) => item.classList.toggle('is-active', item.dataset.category === categoria));
+    document.querySelectorAll('[data-quiz-category]').forEach((card) => { card.hidden = normalizar(card.dataset.quizCategory) !== categoriaNormalizada; });
+    document.getElementById('quizList')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    tocarSom('categoria');
 }

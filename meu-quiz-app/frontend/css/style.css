@@ -73,6 +73,14 @@ nav ul, .nav-links { display: flex; align-items: center; gap: 8px; list-style: n
 nav a, .nav-links a { padding: 9px 13px; color: var(--muted); text-decoration: none; font-weight: 600; border-radius: 10px; }
 nav a:hover, .nav-links a:hover { color: var(--ink); background: var(--surface-soft); }
 .theme-toggle, nav button { padding: 9px 13px; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 10px; font-weight: 600; }
+.theme-toggle { display: inline-grid; place-items: center; width: 42px; height: 42px; padding: 0; font-size: 1.35rem; }
+.profile-nav-avatar { display: inline-grid !important; place-items: center; width: 42px; height: 42px; padding: 0 !important; color: #fff !important; background: linear-gradient(135deg, #8b275d, #e07a81); border-radius: 50% !important; font-size: .78rem; font-weight: 800 !important; box-shadow: 0 6px 14px rgba(127,22,56,.18); transition: transform .18s, box-shadow .18s; }
+.profile-nav-avatar:hover { color: #fff !important; background: linear-gradient(135deg, #741334, #c94f69) !important; transform: translateY(-2px); box-shadow: 0 9px 18px rgba(127,22,56,.25); }
+.profile-nav-avatar.avatar-oceano { background: linear-gradient(135deg, #255b78, #53a6ae); }
+.profile-nav-avatar.avatar-bosque { background: linear-gradient(135deg, #24594e, #72a97f); }
+.profile-nav-avatar.avatar-sol { background: linear-gradient(135deg, #a65f21, #edb85e); }
+.profile-nav-avatar.avatar-cosmos { background: linear-gradient(135deg, #423b78, #9a79bd); }
+.profile-nav-avatar.avatar-rubi { background: linear-gradient(135deg, #8e233e, #db6570); }
 
 main, .container { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
 main { padding: 42px 0 72px !important; }
@@ -99,6 +107,7 @@ main { padding: 42px 0 72px !important; }
 .subject-card { display: grid; justify-items: center; width: 100%; gap: 9px; padding: 16px 8px; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 8px 22px rgba(24,42,70,.04); text-decoration: none; transition: transform .18s, box-shadow .18s, border-color .18s; }
 .subject-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .subject-card.is-active { border-color: var(--coral); box-shadow: 0 0 0 3px rgba(159,36,77,.13), var(--shadow); animation: subject-pulse .35s ease both; }
+.quiz-card[hidden] { display: none; }
 .subject-card b { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; font-size: 1.35rem; }
 .subject-card span { font-size: .82rem; font-weight: 700; }
 .subject-math b { color: #3272df; background: #dce9ff; } .subject-bio b { color: #20a866; background: #d9f7e5; } .subject-history b { color: #e86820; background: #ffead4; } .subject-geo b { color: #8c3dde; background: #eedcff; } .subject-physics b { color: #c39200; background: #fff4bc; } .subject-chem b { color: #d64f59; background: #ffe0e2; }

@@ -39,6 +39,53 @@ async function apiRequest(endpoint, method = 'GET', body = null) {
 
     const partes = endpoint.split('?')[0].split('/').filter(Boolean);
 
+    if (partes[0] === 'auth' && partes[1] === 'perfil') {
+        const usuario = await exigirUsuario();
+        if (method === 'GET') {
+            const { data, error } = await SUPABASE.from('profiles').select('*').eq('id', usuario.id).single();
+            if (error) throw error;
+            return data;
+        }
+        if (method === 'PATCH') {
+            const { data, error } = await SUPABASE.from('profiles').update(body || {}).eq('id', usuario.id).select().single();
+            if (error) throw error;
+            return data;
+        }
+    }
+
+    if (partes[0] === 'auth' && partes[1] === 'avatares') {
+        const usuario = await exigirUsuario();
+        const catalogo = [
+            { id: 'aurora', label: 'AU', nome: 'Aurora', preco: 0 }, { id: 'oceano', label: 'OC', nome: 'Oceano', preco: 0 },
+            { id: 'bosque', label: 'BO', nome: 'Bosque', preco: 0 }, { id: 'sol', label: 'SL', nome: 'Solar', preco: 0 },
+            { id: 'cosmos', label: 'CO', nome: 'Cosmos', preco: 350 }, { id: 'rubi', label: 'RU', nome: 'Rubi', preco: 600 },
+            { id: 'eclipse', label: 'EC', nome: 'Eclipse', preco: 900 }, { id: 'coral', label: 'CR', nome: 'Coral', preco: 1200 },
+            { id: 'magma', label: 'MG', nome: 'Magma', preco: 1500 }, { id: 'nevoa', label: 'NE', nome: 'Névoa', preco: 2000 }
+        ];
+        if (partes[2] && partes[3] === 'comprar' && method === 'POST') {
+            const avatar = catalogo.find((item) => item.id === partes[2]);
+            if (!avatar) throw new Error('Avatar inválido.');
+            const { data: perfil, error: erroPerfil } = await SUPABASE.from('profiles').select('xp,avatares_comprados').eq('id', usuario.id).single();
+            if (erroPerfil) throw erroPerfil;
+            const comprados = perfil.avatares_comprados || [];
+            if (!comprados.includes(avatar.id)) {
+                if (Number(perfil.xp || 0) < avatar.preco) throw new Error('Você ainda não tem XP suficiente.');
+                const { error } = await SUPABASE.from('profiles').update({ xp: Number(perfil.xp || 0) - avatar.preco, avatares_comprados: [...comprados, avatar.id] }).eq('id', usuario.id);
+                if (error) throw error;
+            }
+            return { xp: Math.max(0, Number(perfil.xp || 0) - (comprados.includes(avatar.id) ? 0 : avatar.preco)), avataresComprados: [...new Set([...comprados, avatar.id])] };
+        }
+        const { data: perfil, error } = await SUPABASE.from('profiles').select('xp,avatares_comprados').eq('id', usuario.id).single();
+        if (error) throw error;
+        return { catalogo, xp: perfil.xp || 0, avataresComprados: perfil.avatares_comprados || catalogo.filter((item) => item.preco === 0).map((item) => item.id) };
+    }
+
+    if (partes[0] === 'ranking' && method === 'GET') {
+        const { data, error } = partes[1] ? await SUPABASE.rpc('ranking_por_quiz', { quiz_uuid: partes[1] }) : await SUPABASE.rpc('ranking_geral');
+        if (error) throw error;
+        return data || [];
+    }
+
     if (partes[0] === 'atividades' && partes[1] === 'compartilhar' && method === 'POST') {
         const usuario = await exigirUsuario();
         const email = String(body?.email || '').trim().toLowerCase();

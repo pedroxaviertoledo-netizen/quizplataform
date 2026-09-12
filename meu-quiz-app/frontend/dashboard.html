@@ -23,27 +23,13 @@
             <li><button onclick="logout()" class="btn-wine" style="padding: 4px 10px;">Sair</button></li>
         </ul>
     </nav>
-<main style="padding: 2rem; max-width: 1200px; margin: 0 auto;">
-        
-        <section class="hero">
-            <h1>Pronto para jogar?</h1>
-            <p style="margin-bottom: 20px; font-size: 1.1rem; opacity: 0.9;">Insira um código de jogo para participar agora mesmo</p>
-            
-            <div class="hero-search">
-                <input type="text" id="codigoBusca" placeholder="Ex: X9A4B2" autocomplete="off" maxlength="6">
-                <button onclick="buscarQuizPorCodigo()" class="btn-accent" style="border-radius: 12px;">Entrar</button>
-            </div>
+<main class="dashboard-page">
+        <section class="dashboard-hero">
+            <div class="dashboard-hero-copy"><span class="eyebrow">JOGUE AGORA</span><h1>Pronto para testar seus conhecimentos?</h1><p>Insira o código fornecido pelo seu professor ou busque quizzes na nossa biblioteca.</p><div class="hero-search"><input type="text" id="codigoBusca" placeholder="EX: 123456" autocomplete="off" maxlength="6"><button onclick="buscarQuizPorCodigo()" class="btn-accent">Entrar <span aria-hidden="true">→</span></button></div></div>
+            <div class="dashboard-hero-art" aria-hidden="true"><div class="score-tile correct">✓<small>Correto</small></div><div class="score-tile xp">✦<small>+500 XP</small></div></div>
         </section>
-
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-            <h2>Descobrir Quizzes</h2>
-            <a href="criar.html" class="btn-wine" style="text-decoration: none;">+ Criar Novo</a>
-        </div>
-        
-        <div id="quizList">
-            <!-- Os cards gamificados serão injetados aqui pelo JavaScript -->
-        </div>
-
+        <section class="dashboard-section"><div class="section-heading"><div><span class="eyebrow">BIBLIOTECA</span><h2>Explorar por matérias</h2></div><a href="criar.html" class="btn-wine">+ Criar novo</a></div><div class="subject-grid"><a href="#quizList" class="subject-card subject-math"><b>▦</b><span>Matemática</span></a><a href="#quizList" class="subject-card subject-bio"><b>◒</b><span>Biologia</span></a><a href="#quizList" class="subject-card subject-history"><b>▣</b><span>História</span></a><a href="#quizList" class="subject-card subject-geo"><b>◉</b><span>Geografia</span></a><a href="#quizList" class="subject-card subject-physics"><b>◌</b><span>Física</span></a><a href="#quizList" class="subject-card subject-chem"><b>△</b><span>Química</span></a></div></section>
+        <section class="dashboard-section quiz-library"><div class="section-heading"><div><span class="eyebrow">PARA VOCÊ</span><h2>Descobrir quizzes</h2></div></div><div id="quizList"></div></section>
     </main>
     
     <script src="js/config.js"></script>

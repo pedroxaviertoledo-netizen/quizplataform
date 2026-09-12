@@ -43,4 +43,21 @@ document.addEventListener('DOMContentLoaded', () => {
         botao.title = 'Alternar tema';
         botao.setAttribute('aria-label', 'Alternar tema claro e escuro');
     });
+    document.querySelectorAll('.navbar, nav').forEach((nav) => {
+        const links = nav.querySelector('.nav-links');
+        if (!links || nav.querySelector('.menu-toggle')) return;
+        const botao = document.createElement('button');
+        botao.type = 'button';
+        botao.className = 'menu-toggle';
+        botao.setAttribute('aria-label', 'Abrir menu de navegação');
+        botao.setAttribute('aria-expanded', 'false');
+        botao.innerHTML = '<span></span><span></span><span></span>';
+        nav.insertBefore(botao, links);
+        botao.addEventListener('click', () => {
+            const aberto = nav.classList.toggle('menu-open');
+            botao.setAttribute('aria-expanded', String(aberto));
+            botao.setAttribute('aria-label', aberto ? 'Fechar menu de navegação' : 'Abrir menu de navegação');
+        });
+        links.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => nav.classList.remove('menu-open')));
+    });
 });

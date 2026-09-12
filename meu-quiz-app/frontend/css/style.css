@@ -528,3 +528,20 @@ input[type="file"] { position: absolute; width: 1px; height: 1px; overflow: hidd
     .file-picker { align-items: flex-start; }
     .timer-header { font-size: .75rem; }
 }
+
+@media (max-width: 680px) {
+    .create-page { width: calc(100% - 18px); padding: 18px 0 40px !important; }
+    .create-page > .card { padding: 16px; }
+    .create-page .creation-section { margin-top: 18px; padding-top: 16px; }
+    .create-page #areaPerguntas > div[style*="dashed"] { padding: 16px !important; }
+    .create-page h2 { font-size: 1.35rem; }
+    .create-page h3 { font-size: 1rem; }
+    .play-page { width: calc(100% - 18px); padding-top: 16px !important; }
+    .play-page #quizStart { width: 100%; padding: 20px 16px; }
+    .play-page #quizStart h1 { font-size: 1.7rem; }
+    .play-page #gameContainer { width: 100%; }
+    .play-page .quiz-header { padding: 18px 14px !important; }
+    .play-page #perguntaAtual { font-size: 1.35rem; overflow-wrap: anywhere; }
+    .play-page .quiz-materials { justify-content: stretch; }
+    .play-page .quiz-materials a { width: 100%; text-align: center; overflow-wrap: anywhere; }
+}

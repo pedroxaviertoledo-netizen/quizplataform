@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuizApp - Dashboard</title>
-    <link rel="stylesheet" href="css/style.css?v=20260914">
+    <link rel="stylesheet" href="css/style.css?v=20260916">
 </head>
 <body>
     <nav class="navbar">
@@ -28,7 +28,7 @@
             <div class="dashboard-hero-copy"><span class="eyebrow">JOGUE AGORA</span><h1>Pronto para testar seus conhecimentos?</h1><p>Insira o código fornecido pelo seu professor ou busque quizzes na nossa biblioteca.</p><div class="hero-search"><input type="text" id="codigoBusca" placeholder="EX: 123456" autocomplete="off" maxlength="6"><button onclick="buscarQuizPorCodigo()" class="btn-accent">Entrar <span aria-hidden="true">→</span></button></div></div>
             <div class="dashboard-hero-art" aria-hidden="true"><div class="score-tile correct">✓<small>Correto</small></div><div class="score-tile xp">✦<small>+500 XP</small></div></div>
         </section>
-        <section class="dashboard-section"><div class="section-heading"><div><span class="eyebrow">BIBLIOTECA</span><h2>Explorar por matérias</h2></div><a href="criar.html" class="btn-wine">+ Criar novo</a></div><div class="subject-grid"><a href="#quizList" class="subject-card subject-math"><b>▦</b><span>Matemática</span></a><a href="#quizList" class="subject-card subject-bio"><b>◒</b><span>Biologia</span></a><a href="#quizList" class="subject-card subject-history"><b>▣</b><span>História</span></a><a href="#quizList" class="subject-card subject-geo"><b>◉</b><span>Geografia</span></a><a href="#quizList" class="subject-card subject-physics"><b>◌</b><span>Física</span></a><a href="#quizList" class="subject-card subject-chem"><b>△</b><span>Química</span></a></div></section>
+        <section class="dashboard-section"><div class="section-heading"><div><span class="eyebrow">BIBLIOTECA</span><h2>Explorar por matérias</h2></div><a href="criar.html" class="btn-wine">+ Criar novo</a></div><div class="subject-grid"><button type="button" data-category="Matemática" class="subject-card subject-math"><b>▦</b><span>Matemática</span></button><button type="button" data-category="Biologia" class="subject-card subject-bio"><b>◒</b><span>Biologia</span></button><button type="button" data-category="História" class="subject-card subject-history"><b>▣</b><span>História</span></button><button type="button" data-category="Geografia" class="subject-card subject-geo"><b>◉</b><span>Geografia</span></button><button type="button" data-category="Física" class="subject-card subject-physics"><b>◌</b><span>Física</span></button><button type="button" data-category="Química" class="subject-card subject-chem"><b>△</b><span>Química</span></button></div></section>
         <section class="dashboard-section quiz-library"><div class="section-heading"><div><span class="eyebrow">PARA VOCÊ</span><h2>Descobrir quizzes</h2></div></div><div id="quizList"></div></section>
     </main>
     

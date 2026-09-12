@@ -158,7 +158,10 @@ async function carregarQuizzes() {
         const usuario = JSON.parse(localStorage.getItem('user') || '{}');
         const usuarioId = usuario.id || usuario._id;
         const podeApagar = (quiz) => quiz.criador && (quiz.criador === usuarioId || usuario.role === 'desenvolvedor' || usuario.roles?.includes('desenvolvedor'));
-        lista.innerHTML = quizzes.map((quiz) => `
+        const normalizarCategoria = (valor) => String(valor || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+        const renderizarQuizzes = (categoria = '') => {
+            const filtrados = categoria ? quizzes.filter((quiz) => normalizarCategoria(quiz.categoria) === normalizarCategoria(categoria)) : quizzes;
+            lista.innerHTML = filtrados.length ? filtrados.map((quiz) => `
             <article class="quiz-card">
                 <p class="quiz-category">${quiz.categoria}</p>
                 <h3>${quiz.titulo}</h3>
@@ -168,8 +171,18 @@ async function carregarQuizzes() {
                 <div class="share-quiz"><input id="shareEmail-${quiz._id}" type="email" placeholder="E-mail do estudante"><button type="button" class="btn-secondary" onclick="compartilharQuizPorEmail('${quiz._id}')">Compartilhar</button></div>
                 ${podeApagar(quiz) ? `<button type="button" class="btn-danger quiz-delete" data-quiz-delete="${quiz._id}">Apagar quiz</button>` : ''}
             </article>
-        `).join('');
-        lista.querySelectorAll('[data-quiz-delete]').forEach((botao) => botao.addEventListener('click', () => apagarQuiz(botao.dataset.quizDelete)));
+        `).join('') : '<p class="empty-state">Nenhum quiz encontrado nesta matéria.</p>';
+            lista.querySelectorAll('[data-quiz-delete]').forEach((botao) => botao.addEventListener('click', () => apagarQuiz(botao.dataset.quizDelete)));
+        };
+        renderizarQuizzes();
+        document.querySelectorAll('[data-category]').forEach((botao) => botao.addEventListener('click', () => {
+            document.querySelectorAll('[data-category]').forEach((item) => item.classList.remove('is-active'));
+            botao.classList.add('is-active');
+            renderizarQuizzes(botao.dataset.category);
+            document.getElementById('quizList').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            tocarSom('categoria');
+        }));
+        document.querySelectorAll('.subject-card').forEach((botao) => botao.addEventListener('mouseenter', () => tocarSom('hover'), { once: true }));
     } catch (erro) {
         lista.innerHTML = `<p class="auth-message error">${erro.message}</p>`;
     }
@@ -749,6 +762,21 @@ function tocarSom(tipo) {
         gain.gain.linearRampToValueAtTime(0, now + 0.18);
         osc.start(now);
         osc.stop(now + 0.18);
+    } else if (tipo === 'categoria') {
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(330, now);
+        osc.frequency.exponentialRampToValueAtTime(660, now + 0.12);
+        gain.gain.setValueAtTime(0.16, now);
+        gain.gain.linearRampToValueAtTime(0, now + 0.16);
+        osc.start(now);
+        osc.stop(now + 0.16);
+    } else if (tipo === 'hover') {
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(520, now);
+        gain.gain.setValueAtTime(0.035, now);
+        gain.gain.linearRampToValueAtTime(0, now + 0.045);
+        osc.start(now);
+        osc.stop(now + 0.045);
     }
 }
 

@@ -12,7 +12,10 @@ async function carregarAtividades() {
         document.getElementById('pendingActivities').innerHTML = pendentes.length ? pendentes.map((item) => renderizarAtividade(item, false)).join('') : '<p class="empty-state">Nenhuma atividade pendente.</p>';
         document.getElementById('completedActivities').innerHTML = concluidas.length ? concluidas.map((item) => renderizarAtividade(item, true)).join('') : '<p class="empty-state">Nenhuma atividade concluída.</p>';
     } catch (erro) {
-        document.getElementById('pendingActivities').innerHTML = `<p class="auth-message error">${erro.message}</p>`;
+        const mensagem = erro.code === 'PGRST205' || erro.message?.includes('public.atividades')
+            ? 'A estrutura de atividades ainda não foi aplicada ao Supabase. Execute a migração supabase/migrations/20260912_atividades_resultados.sql.'
+            : erro.message;
+        document.getElementById('pendingActivities').innerHTML = `<p class="auth-message error">${mensagem}</p>`;
     }
 }
 carregarAtividades();

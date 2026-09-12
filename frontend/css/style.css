@@ -451,3 +451,80 @@ input[type="file"] { position: absolute; width: 1px; height: 1px; overflow: hidd
 @keyframes grid-drift { from { background-position: 0 0, 0 0; } to { background-position: 44px 22px, 22px 44px; } }
 @keyframes quiz-lines-drift { from { transform: rotate(-4deg) translate(-4%, -2%); } to { transform: rotate(-4deg) translate(4%, 2%); } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+
+/* Responsive layout refinements */
+@media (max-width: 960px) {
+    .navbar, nav, main, .container { width: min(100% - 32px, 1180px); }
+    .navbar, nav { gap: 14px; }
+    nav ul, .nav-links { flex-wrap: wrap; justify-content: flex-end; }
+    .study-grid, .profile-grid { grid-template-columns: minmax(0, 1fr); }
+    .activities-grid { grid-template-columns: 1fr; }
+    .classes-list { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .live-forms { gap: 16px; }
+    .auth-shell { grid-template-columns: minmax(0, 1fr) 380px; gap: 28px; }
+}
+
+@media (max-width: 680px) {
+    html { overflow-x: hidden; }
+    body { min-width: 0; }
+    .navbar, nav, main, .container { width: calc(100% - 24px); }
+    .navbar, nav { min-height: 0; padding: 14px 0 0; }
+    .navbar h2, nav h2 { font-size: 1.05rem; }
+    nav ul, .nav-links { display: flex; flex-wrap: nowrap; justify-content: flex-start; gap: 4px; max-width: 100%; padding: 2px 0 8px; overflow-x: auto; scrollbar-width: none; }
+    nav ul::-webkit-scrollbar, .nav-links::-webkit-scrollbar { display: none; }
+    nav a, .nav-links a, .theme-toggle, nav button { flex: 0 0 auto; padding: 8px 10px; font-size: .78rem; white-space: nowrap; }
+    main { padding: 26px 0 48px !important; }
+    h1 { font-size: clamp(1.8rem, 9vw, 2.5rem); }
+    h2 { font-size: 1.4rem; }
+    .hero { padding: 28px 20px; margin-bottom: 28px; border-radius: 18px; }
+    .hero::after { width: 160px; height: 160px; right: -80px; top: -70px; border-width: 28px; }
+    .hero-search, .share-quiz, .material-add-row, .live-code-picker { grid-template-columns: 1fr; display: grid; }
+    .hero-search .btn-accent, .share-quiz .btn-secondary, .material-add-row .btn-secondary, .live-code-picker .btn-secondary { width: 100%; }
+    .card { padding: 18px; border-radius: 14px; }
+    #quizList { grid-template-columns: 1fr; }
+    .quiz-card { min-height: 0; padding: 18px; }
+    .quiz-card .quiz-action, .quiz-card .btn-danger { width: 100%; }
+    .study-heading { gap: 16px; margin-bottom: 20px; }
+    .study-stats { grid-template-columns: repeat(2, auto); min-width: 0; padding: 12px 14px; }
+    .study-actions { grid-template-columns: 1fr; }
+    .study-actions .btn-secondary:last-child { justify-self: stretch; }
+    .activities-grid { gap: 12px; }
+    .activity-item, .notification-item, .feedback-item, .user-item { align-items: stretch; flex-direction: column; gap: 12px; }
+    .activity-item .btn-accent, .notification-item button, .feedback-item button { width: 100%; }
+    .classes-list { grid-template-columns: 1fr; }
+    .join-form { grid-template-columns: 1fr; }
+    .developer-summary, .teacher-summary { gap: 18px; flex-wrap: wrap; }
+    .developer-summary strong, .teacher-summary strong { font-size: 1.5rem; }
+    .teacher-result-header { flex-direction: column; }
+    .teacher-grade { align-self: flex-start; }
+    .profile-identity { align-items: flex-start; }
+    .profile-avatar { width: 64px; height: 64px; border-radius: 18px; }
+    .avatar-choices { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .live-forms { grid-template-columns: 1fr; }
+    .quiz-page { width: calc(100% - 24px); }
+    .quiz-header { padding: 22px 16px; border-radius: 15px; }
+    #gameContainer { padding: 0; border-radius: 14px; }
+    #gameContainer > div:first-child { padding: 22px 16px !important; border-radius: 15px !important; }
+    .quiz-navigation { align-items: stretch; flex-direction: column; }
+    .quiz-navigation .btn-secondary, .quiz-next { width: 100%; margin-left: 0; }
+    .btn-option { min-height: 70px; padding: 14px 12px; font-size: .95rem; }
+    .opcoes-container { gap: 10px; }
+    .podio-container { height: 200px; gap: 4px; transform: none; }
+    .podio-step { width: 30%; }
+    .podio-nome { max-width: 100%; font-size: .75rem; }
+    .step-1 .podio-base { height: 125px; }
+    .step-2 .podio-base { height: 92px; }
+    .step-3 .podio-base { height: 64px; }
+    .auth-intro h1 { font-size: 2rem; }
+    .auth-card { padding: 20px 16px; }
+    .terms-card { padding: 22px 18px; }
+}
+
+@media (max-width: 380px) {
+    .navbar, nav, main, .container, .quiz-page { width: calc(100% - 18px); }
+    .card { padding: 15px; }
+    .study-stats { grid-template-columns: 1fr 1fr; }
+    .avatar-choices { grid-template-columns: 1fr; }
+    .file-picker { align-items: flex-start; }
+    .timer-header { font-size: .75rem; }
+}

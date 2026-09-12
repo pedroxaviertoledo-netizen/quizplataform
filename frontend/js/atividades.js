@@ -4,7 +4,14 @@ function renderizarAtividade(atividade, concluida) {
 }
 async function carregarAtividades() {
     try {
-        const atividades = await apiRequest('/atividades');
+        let cliente = window.supabaseClient;
+        if (!cliente && window.supabaseReady) cliente = await window.supabaseReady;
+        if (!cliente) throw new Error('O cliente Supabase não foi carregado. Recarregue a página.');
+        const { data: sessao, error: erroSessao } = await cliente.auth.getUser();
+        if (erroSessao || !sessao?.user) throw new Error('Sessão expirada. Faça login novamente.');
+        const { data, error } = await cliente.from('atividades').select('*').eq('destinatario_id', sessao.user.id).order('enviada_em', { ascending: false });
+        if (error) throw error;
+        const atividades = (data || []).map((atividade) => ({ ...atividade, _id: atividade.id, quizId: atividade.quiz_id, enviadaEm: atividade.enviada_em, concluidaEm: atividade.concluida_em }));
         const pendentes = atividades.filter((item) => item.status !== 'concluida');
         const concluidas = atividades.filter((item) => item.status === 'concluida');
         document.getElementById('pendingCount').textContent = pendentes.length;

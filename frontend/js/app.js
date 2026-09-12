@@ -175,6 +175,7 @@ async function carregarQuizzes() {
             lista.querySelectorAll('[data-quiz-delete]').forEach((botao) => botao.addEventListener('click', () => apagarQuiz(botao.dataset.quizDelete)));
         };
         renderizarQuizzes();
+        if (window.materiaSelecionada) filtrarMateria(window.materiaSelecionada);
         document.querySelectorAll('.subject-card').forEach((botao) => botao.addEventListener('mouseenter', () => tocarSom('hover'), { once: true }));
     } catch (erro) {
         lista.innerHTML = `<p class="auth-message error">${erro.message}</p>`;
@@ -967,6 +968,7 @@ async function buscarQuizPorCodigo() {
 }
 
 function filtrarMateria(categoria) {
+    window.materiaSelecionada = categoria;
     const normalizar = (valor) => String(valor || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
     const categoriaNormalizada = normalizar(categoria);
     document.querySelectorAll('[data-category]').forEach((item) => item.classList.toggle('is-active', item.dataset.category === categoria));

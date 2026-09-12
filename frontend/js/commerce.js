@@ -14,6 +14,25 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('[data-contact]')?.addEventListener('click', () => { status.textContent = 'Um consultor entrará em contato com você.'; modal.showModal(); });
     document.addEventListener('click', async (event) => { if (!event.target.matches('[data-copy-pix]')) return; await navigator.clipboard?.writeText('quizplatform-pro-2026-0001'); event.target.textContent = 'Chave copiada'; });
     document.addEventListener('click', (event) => { if (!event.target.matches('[data-generate-boleto]')) return; const boleto = window.open('', '_blank', 'width=720,height=520'); if (!boleto) return; boleto.document.write('<main style="font:16px Arial;padding:40px"><h1>Quiz Platform Pro</h1><p>Boleto bancário - pagamento simulado</p><hr><h2>R$ 19,90</h2><p>Linha digitável: 34191.79001 01043.510047 91020.150008 8 1234000001990</p><p>Use a opção Imprimir > Salvar como PDF.</p></main>'); boleto.document.close(); boleto.print(); });
-    document.getElementById('checkoutForm')?.addEventListener('submit', (event) => { event.preventDefault(); status.textContent = 'Pagamento simulado pronto. Nenhuma cobrança foi realizada.'; status.className = 'payment-status success'; });
+    document.getElementById('checkoutForm')?.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        const button = document.getElementById('paymentSubmit');
+        const frequencia = document.querySelector('input[name="frequencia"]:checked')?.value || 'mensal';
+        const token = localStorage.getItem('token');
+        if (!token) { status.textContent = 'Faça login para assinar o plano Pro.'; status.className = 'payment-status error'; return; }
+        button.disabled = true;
+        button.textContent = 'Abrindo Mercado Pago...';
+        try {
+            const response = await fetch('https://xvakdcanppdgpwkwxjrl.supabase.co/functions/v1/create-mercadopago-checkout', { method: 'POST', headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ frequencia }) });
+            const result = await response.json();
+            if (!response.ok || !result.initPoint) throw new Error(result.error || 'Não foi possível criar o checkout.');
+            window.location.href = result.initPoint;
+        } catch (erro) {
+            status.textContent = erro.message;
+            status.className = 'payment-status error';
+            button.disabled = false;
+            button.textContent = 'Continuar pagamento';
+        }
+    });
     renderPayment();
 });

@@ -153,9 +153,12 @@ function configurarCriacaoQuiz() {
             if (perfil.plano !== 'pro') {
                 const quizzes = await apiRequest('/quizzes');
                 const usuarioId = perfil.id || JSON.parse(localStorage.getItem('user') || '{}').id;
-                const criados = quizzes.filter((quiz) => quiz.criador === usuarioId).length;
+                const inicioSemana = new Date();
+                inicioSemana.setHours(0, 0, 0, 0);
+                inicioSemana.setDate(inicioSemana.getDate() - inicioSemana.getDay());
+                const criados = quizzes.filter((quiz) => quiz.criador === usuarioId && new Date(quiz.created_at || 0) >= inicioSemana).length;
                 if (criados >= 5) {
-                    mensagem.textContent = 'Seu plano gratuito permite até 5 quizzes. Faça upgrade para o Pro.';
+                    mensagem.textContent = 'Seu plano gratuito permite até 5 quizzes por semana. Faça upgrade para o Pro.';
                     mensagem.className = 'create-message error';
                     return;
                 }

@@ -28,12 +28,14 @@ begin
         return new;
     end if;
 
-    select count(*) into quizzes_criados
+        select count(*) into quizzes_criados
     from public.quizzes q
-    where q.criador = auth.uid() and q.ativo = true;
+        where q.criador = auth.uid()
+            and q.ativo = true
+            and q.created_at >= date_trunc('week', now());
 
     if quizzes_criados >= 5 then
-        raise exception 'Limite do plano gratuito atingido: você pode criar até 5 quizzes. Faça upgrade para o Pro.' using errcode = 'P0001';
+                raise exception 'Limite semanal do plano gratuito atingido: você pode criar até 5 quizzes por semana. Faça upgrade para o Pro.' using errcode = 'P0001';
     end if;
 
     select exists (

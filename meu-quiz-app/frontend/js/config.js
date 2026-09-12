@@ -50,6 +50,16 @@ document.addEventListener('DOMContentLoaded', () => {
         botao.setAttribute('aria-expanded', 'false');
         botao.innerHTML = '<span></span><span></span><span></span>';
         nav.insertBefore(botao, links);
+        const acoes = document.createElement('div');
+        acoes.className = 'mobile-actions';
+        ['.profile-nav-avatar', '.theme-toggle', '.btn-wine'].forEach((seletor) => {
+            const original = links.querySelector(seletor);
+            if (!original) return;
+            const clone = original.cloneNode(true);
+            clone.classList.add('mobile-action');
+            acoes.appendChild(clone);
+        });
+        nav.insertBefore(acoes, botao);
         botao.addEventListener('click', () => {
             const aberto = nav.classList.toggle('menu-open');
             botao.setAttribute('aria-expanded', String(aberto));

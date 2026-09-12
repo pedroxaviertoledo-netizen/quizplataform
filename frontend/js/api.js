@@ -50,7 +50,6 @@ async function apiRequest(endpoint, method = 'GET', body = null) {
         if (erroQuiz || !quiz) throw new Error('Quiz não encontrado.');
         if (erroDestinatario || !destinatario) throw new Error('Não encontramos um usuário com esse e-mail.');
         if (destinatario.id === usuario.id) throw new Error('Escolha o e-mail de outro estudante.');
-        if (erroRemetente) throw erroRemetente;
         const { data: atividade, error } = await SUPABASE.from('atividades').insert({
             quiz_id: quiz.id,
             destinatario_id: destinatario.id,

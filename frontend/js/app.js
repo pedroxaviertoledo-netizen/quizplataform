@@ -1,4 +1,4 @@
-const paginasProtegidas = ['dashboard.html', 'criar.html', 'jogar.html', 'perfil.html', 'ao-vivo.html', 'estudos.html', 'atividades.html', 'professor.html', 'notificacoes.html', 'turmas.html', 'desenvolvedor.html'];
+const paginasProtegidas = ['dashboard.html', 'criar.html', 'jogar.html', 'perfil.html', 'ao-vivo.html', 'estudos.html', 'atividades.html', 'professor.html', 'notificacoes.html', 'turmas.html', 'desenvolvedor.html', 'painel-adm.html'];
 const paginaAtual = window.location.pathname.split('/').pop();
 
 if (localStorage.getItem('theme') === 'dark') {
@@ -52,6 +52,18 @@ let audioCtx = null;
 
 function configurarCriacaoQuiz() {
     if (paginaAtual !== 'criar.html') return;
+    const aiModal = document.getElementById('modal-gerador-ia');
+    document.querySelector('[data-open-ai]')?.addEventListener('click', () => aiModal?.showModal());
+    document.getElementById('aiGeneratorForm')?.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const status = document.getElementById('aiGeneratorStatus');
+        const button = document.getElementById('aiGenerateButton');
+        if (!document.getElementById('aiPrompt').value.trim()) { status.textContent = 'Digite um tema ou cole um texto para começar.'; status.className = 'payment-status error'; return; }
+        button.disabled = true;
+        button.innerHTML = '<span class="loading-spinner"></span> Gerando...';
+        status.textContent = 'Analisando o conteúdo e preparando sugestões...';
+        window.setTimeout(() => { button.disabled = false; button.textContent = 'Gerar com IA'; status.textContent = 'Sugestão criada. Revise e ajuste as perguntas antes de salvar.'; status.className = 'payment-status success'; aiModal?.close(); tocarSom('acerto'); }, 1200);
+    });
     const perguntas = [];
     const lista = document.getElementById('listaPerguntasVisuais');
     const contador = document.getElementById('contadorPerguntas');

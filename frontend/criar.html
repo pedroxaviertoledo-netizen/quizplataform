@@ -38,6 +38,11 @@
                 </label>
             </div>
 
+            <section class="creation-section ai-launcher">
+                <div><h3>Gerador de Quiz com IA</h3><p>Transforme um texto, tema ou material em uma sugestão de perguntas.</p></div>
+                <button type="button" class="btn-accent" data-open-ai>✨ Gerar perguntas com IA</button>
+            </section>
+
             <section class="creation-section">
                 <h3>Materiais de apoio</h3>
                 <p>Adicione arquivos, links ou imagens para os alunos consultarem no quiz.</p>
@@ -122,8 +127,9 @@
         </div>
     </main>
     
-    <script src="js/config.js"></script>
+    <dialog id="modal-gerador-ia" class="checkout-modal"><form method="dialog" class="checkout-panel ai-modal-panel" id="aiGeneratorForm"><button class="modal-close" value="cancel" aria-label="Fechar">×</button><span class="eyebrow">ASSISTENTE DE CRIAÇÃO</span><h2>Gerar perguntas com IA</h2><textarea id="aiPrompt" rows="6" placeholder="Cole um texto, tema ou instruções para o quiz..."></textarea><div class="payment-row"><label>Quantidade<select id="aiQuestionCount"><option>5</option><option>10</option><option>15</option></select></label><label>Dificuldade<select id="aiDifficulty"><option>Fácil</option><option selected>Médio</option><option>Difícil</option></select></label></div><p id="aiGeneratorStatus" class="payment-status" aria-live="polite"></p><button type="submit" class="btn-accent" id="aiGenerateButton">Gerar com IA</button></form></dialog>
+    <script src="js/config.js?v=20260920"></script>
     <script src="js/api.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app.js?v=20260920"></script>
 </body>
 </html>

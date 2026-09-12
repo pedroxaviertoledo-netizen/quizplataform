@@ -46,6 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.navbar, nav').forEach((nav) => {
         const links = nav.querySelector('.nav-links');
         if (!links || nav.querySelector('.menu-toggle')) return;
+        if (!links.querySelector('.nav-pro')) {
+            const itemPro = document.createElement('li');
+            itemPro.className = 'nav-pro';
+            itemPro.innerHTML = '<a href="planos.html" class="btn-planos">⭐ Seja Pro / Planos</a>';
+            links.insertBefore(itemPro, links.querySelector('.profile-nav-avatar')?.closest('li') || null);
+        }
         const botao = document.createElement('button');
         botao.type = 'button';
         botao.className = 'menu-toggle';

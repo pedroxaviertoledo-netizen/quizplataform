@@ -53,7 +53,15 @@ let audioCtx = null;
 function configurarCriacaoQuiz() {
     if (paginaAtual !== 'criar.html') return;
     const aiModal = document.getElementById('modal-gerador-ia');
-    document.querySelector('[data-open-ai]')?.addEventListener('click', () => aiModal?.showModal());
+    document.querySelector('[data-open-ai]')?.addEventListener('click', async () => {
+        try {
+            const perfil = await apiRequest('/auth/perfil');
+            if (perfil.plano !== 'pro') { window.location.href = 'planos.html'; return; }
+            aiModal?.showModal();
+        } catch (erro) {
+            window.alert(erro.message);
+        }
+    });
     document.getElementById('aiGeneratorForm')?.addEventListener('submit', (event) => {
         event.preventDefault();
         const status = document.getElementById('aiGeneratorStatus');
@@ -138,6 +146,23 @@ function configurarCriacaoQuiz() {
             mensagem.textContent = 'Informe título, categoria e adicione pelo menos uma pergunta.';
             mensagem.className = 'create-message error';
             tocarSom('erro');
+            return;
+        }
+        try {
+            const perfil = await apiRequest('/auth/perfil');
+            if (perfil.plano !== 'pro') {
+                const quizzes = await apiRequest('/quizzes');
+                const usuarioId = perfil.id || JSON.parse(localStorage.getItem('user') || '{}').id;
+                const criados = quizzes.filter((quiz) => quiz.criador === usuarioId).length;
+                if (criados >= 5) {
+                    mensagem.textContent = 'Seu plano gratuito permite até 5 quizzes. Faça upgrade para o Pro.';
+                    mensagem.className = 'create-message error';
+                    return;
+                }
+            }
+        } catch (erro) {
+            mensagem.textContent = erro.message;
+            mensagem.className = 'create-message error';
             return;
         }
         const botao = document.getElementById('btnSalvarQuiz');
